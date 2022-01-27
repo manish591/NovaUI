@@ -9,6 +9,7 @@
     visibility: hidden;
     transition: transform 500ms ease-in-out;
     transform: translateX(-100%);
+    z-index: 10;
 }
 
 .sidebar__content {
@@ -51,13 +52,15 @@
     height: calc(100vh - 100px);
     overflow: hidden;
     overflow-y: auto;
+    padding-block-end: var(--spacing-12);
 }
 
 .sidebar__list {
     gap: var(--spacing-12);
     flex-direction: column;
     padding-inline-start: var(--spacing-12);
-    padding-block-start: var(--spacing-12);
+    padding-block: var(--spacing-12);
+    border-block-end: 1px solid var(--surface4);
 }
 
 .sidebar__list-item {
@@ -65,6 +68,11 @@
     color: var(--text2);
     font-size: var(--fs-500);
     font-weight: bold;
+}
+
+.sidebar__list-category {
+    font-size: var(--fs-600);
+    color: var(--text2);
 }
 
 @media (min-width: 1000px) {

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova-Documentation</title>
+    <script src="/javascript/theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/design-system.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/comp-page.css">
+</head>
+<body class="surface-one">
+    <aside class="sidebar grid" id="sidenav-open">
+        <section class="sidebar__content">
+          <div class="sidebar__top flex">
+            <h2 class="sidebar__title">Nova UI</h2>
+          </div>
+          <div class="sidebar__bottom"> 
+            <ul class="flex sidebar__list">
+              <p class="sidebar__list-category">Get Started</p>  
+              <a href="#" class="sidebar__list-item"><li>Installation</li></a>
+              <a href="#" class="sidebar__list-item"><li>Learn</li></a>
+              <a href="#" class="sidebar__list-item"><li>Usages</li></a>
+              <a href="#" class="sidebar__list-item"><li>Examples</li></a>
+              <a href="#" class="sidebar__list-item"><li>Conclusion</li></a>
+            </ul>
+            <ul class="flex sidebar__list">
+                <p class="sidebar__list-category">Components</p>  
+                <a href="#" class="sidebar__list-item"><li>Avator</li></a>
+                <a href="#" class="sidebar__list-item"><li>Alert</li></a>
+                <a href="#" class="sidebar__list-item"><li>Badge</li></a>
+                <a href="#" class="sidebar__list-item"><li>Button</li></a>
+                <a href="#" class="sidebar__list-item"><li>Card</li></a>
+                <a href="#" class="sidebar__list-item"><li>Images</li></a>
+                <a href="#" class="sidebar__list-item"><li>Input</li></a>
+                <a href="#" class="sidebar__list-item"><li>Text Utilities</li></a>
+                <a href="#" class="sidebar__list-item"><li>List</li></a>
+                <a href="#" class="sidebar__list-item"><li>Navigation</li></a>
+                <a href="#" class="sidebar__list-item"><li>Modal</li></a>
+                <a href="#" class="sidebar__list-item"><li>Rartings</li></a>
+                <a href="#" class="sidebar__list-item"><li>Toast</li></a>
+                <a href="#" class="sidebar__list-item"><li>Simplified Grid</li></a>
+                <a href="#" class="sidebar__list-item"><li>Slider</li></a>
+            </ul>
+            <ul class="flex sidebar__list">
+                <p class="sidebar__list-category">Design System</p>  
+            </ul>
+          </div>
+        </section>
+        <a href="#" id="sidenav-close" class="sidebar__close" title="Close Menu"></a>
+    </aside>
+    <header class="surface-two shadow-one">
+          <nav class="nav row">
+            <ul class="nav__list row">
+              <a href="#sidenav-open" id="sidenav-button" class="hamburger nav__hamburger" title="Open Menu" aria-label="Open Menu">
+                <img
+                  src="/assets/menu_black_24dp (1).svg"
+                  alt=""
+                  class="nav__item"
+                />
+              </a>
+              <li class="nav__item logo">Nova UI</li>
+            </ul>
+            <ul class="nav__list hide nav__list--box surface-three">
+              <a href="/index.html" class="nav__item nav__item--pages"><li>Home</li></a>
+              <a href="/pages/intro.html" class="nav__item nav__item--pages"><li>Documentation</li></a>
+              <a href="https://github.com/manish591/NovaUI" class="nav__item nav__item--pages"><li>Github</li></a>
+              <a href="#" class="nav__item nav__item--pages"><li>About Me</li></a>
+            </ul>
+            <ul class="nav__links row">
+              <a href="https://github.com/manish591"
+                ><img class="nav__img" src="/assets/github.png" alt=""
+              /></a>
+              <a class="hide" href="https://twitter.com/manishdevrani77"
+                ><img class="nav__img" src="/assets/twitter.png" alt=""
+              /></a>
+              <a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
+                ><img class="nav__img" src="/assets/linkedin.png" alt=""
+              /></a>
+              <button class="theme-toggle nav__img nav__theme nav__item" id="theme-toggle" data-label="auto"></button>
+            </ul>
+          </nav>
+    </header>
+    <div class="component component--grid">
+        <section class="sidenav flow-space">
+            <div class="sidenav__get-started">
+                <h3 class="sidenav__title">Getting Started</h3>
+                <ul class="sidenav__list">
+                    <a href="/pages/intro.html" class="sidenav__items-link"><li class="sidenav__items">Installation</li></a>
+                    <a href="/pages/conclusion.html"><li class="sidenav__items">Learn</li></a>
+                    <a href="/pages/color.html"><li class="sidenav__items">Usage</li></a>
+                    <a href="/pages/typography.html"><li class="sidenav__items">Examples</li></a>
+                    <a href="/pages/conclusion.html"><li class="sidenav__items">Conclusion</li></a>
+                </ul>
+            </div>
+            <div class="sidenav__components">
+                <h3 class="sidenav__title">Components</h3>
+                <ul class="sidenav__list">
+                    <a href="/pages/components/avator/avator.html"><li class="sidenav__items">Avator</li></a>
+                    <a href="/pages/components/alerts/alert.html"><li class="sidenav__items">Alert</li></a>
+                    <a href="/pages/components/badge/badge.html"><li class="sidenav__items">Badge</li></a>
+                    <a href="/pages/components/button/button.html"><li class="sidenav__items">Button</li></a>
+                    <a href="/pages/components/card/card.html"><li class="sidenav__items">Card</li></a>
+                    <a href="/pages/components/image/image.html"><li class="sidenav__items">Image</li></a>
+                    <a href="/pages/components/input/input.html"><li class="sidenav__items">Input</li></a>
+                    <a href="/pages/components/texts/text.html"><li class="sidenav__items">Text Utilities</li></a>
+                    <a href="/pages/components/lists/list.html"><li class="sidenav__items">List</li></a>
+                    <a href="/pages/components/navigation/navigation.html"><li class="sidenav__items">Navigation</li></a>
+                    <a href="/pages/components/modal/modal.html"><li class="sidenav__items">Modal</li></a>
+                    <a href="/pages/components/ratings/ratings.html"><li class="sidenav__items">Ratings</li></a>
+                    <a href="/pages/components/toast/toast.html"><li class="sidenav__items">Toast</li></a>
+                    <a href="/pages/components/grid/grid.html"><li class="sidenav__items">Simplified Grid</li></a>
+                    <a href="/pages/components/slider/slider.html"><li class="sidenav__items">Slider</li></a>
+                </ul>
+            </div>
+            <div class="sidenav__design-system">
+                <h3 class="sidenav__title">Design System</h3>
+            </div>
+        </section>
+        <section class="feed">
+            <div class="space-bottom flow-space-2">
+                <h1 class="feed__title">Introduction to Nova</h1>
+                <p class="feed__text">Nova is a collection of CSS modules, layouts and components to kick start any web project. The library is open source and maintained by the community. Contributing to it will help you build beautiful responsive sites in no time. This is a collection of the most common design patterns, reusable components and best practices to use in your next project. It aims to increase productivity by allowing you to focus on designing beautiful interfaces, instead of wasting time thinking how to build it.</p>
+            </div>
+            <div class="space-bottom flow-space-2">
+                <h3 class="feed__subtitle">Installation Guide</h3>
+                <p class="feed__text">In order to introduce Nova to your project, Copy the Link given below and paste it in the &lt;head&gt; tag of your html, above all other style sheets.</p>
+                <div class="feed__code">
+                    <code>
+                        <iframe
+                        src="https://carbon.now.sh/embed/3lVYmbAcLQa79JyukDSx"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                      </iframe>
+                    </code>
+                </div>
+            </div>
+            <div class="space-bottom flow-space-2">
+                <h3 class="feed__subtitle">Customizing Themes</h3>
+                <p class="feed__text">Although Nova aims at satisfying it's user's need, as much as possible, There are times, when the pre-defined styles are not sufficient. In order to override Nova's base classes, users can add their own class to the pre-existing classes, and style them seperately, as shown below.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

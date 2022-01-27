@@ -256,6 +256,10 @@ textarea {
 .flow-space > * + * {
     margin-block-start: var(--spacing-10, 1rem);
 }
+
+.flow-space-2 > * + * {
+    margin-block-start: var(--spacing-8);
+}
   
 .container {
     max-width: 80rem;

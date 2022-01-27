@@ -36,7 +36,7 @@
 .intro__btn--github {
     background: none;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: var(--fs-300);
 }
 
 .intro__img-container {

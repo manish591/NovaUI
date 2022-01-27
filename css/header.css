@@ -60,6 +60,9 @@ ul {
 .nav__item--pages {
     overflow: hidden;
     position: relative;
+    text-decoration: none;
+    font-size: var(--fs-300);
+    color: var(--text1);
 }
 
 .nav__item--pages::after {
@@ -100,7 +103,7 @@ ul {
 }
 
 [data-label="dark"] {
-    background-image: url("/assets/light_mode_black_24dp\ \(1\).svg");
+    background-image: url("/assets/light_mode_white_24dp.svg");
     background-repeat: no-repeat;
     background-position: center;
 }

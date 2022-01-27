@@ -219,7 +219,7 @@ textarea {
 
 .shadow-one {
     box-shadow:
-      0 2.8px 10.2px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .00001));
+    0 1px 10px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .03));
 }
 
 /* background & color utility */

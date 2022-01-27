@@ -1,0 +1,50 @@
+.intro {
+    inline-size: min(90%, 1200px);
+    margin-block: 10vh;
+    margin-inline: auto;
+}
+
+.intro__title {
+    font-size: var(--fs-900-small);
+    letter-spacing: 1.2px;
+    font-family: var(--ff-sans-normal);
+}
+
+.intro__info {
+    letter-spacing: 1.2px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.intro__links {
+    display: flex;
+    gap: 2.5vh;
+    justify-content: flex-start;
+}
+
+.intro__btn {
+    text-decoration: none;
+    padding: .8rem 1.5rem;
+    border-radius: 6px;
+    color: var(--text1);
+}
+
+.intro__btn--get-started {
+    background-color: var(--brand);
+}
+
+.intro__btn--github {
+    background: none;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.intro__img-container {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .intro__img-container {
+        display: block;
+    }
+}

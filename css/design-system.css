@@ -1,0 +1,299 @@
+/* --------------------- */
+/* defining color themes */
+/* --------------------- */
+
+* {
+    --brand-color: hsl(210, 100%, 46%);
+  
+    --brand-hue: 210;
+    --brand-saturation: 100%;
+    --brand-lightness: 46%;
+  
+    /* Light colors */
+  
+    --brand-light: hsl( var(--brand-hue) var(--brand-saturation) var(--brand-lightness));
+    --text1-light: hsl(var(--brand-hue) var(--brand-saturation) 10%);
+    --text2-light: hsl(var(--brand-hue) 30% 30%);
+    --surface1-light: hsl(var(--brand-hue) 25% 90%);
+    --surface2-light: hsl(var(--brand-hue) 20% 99%);
+    --surface3-light: hsl(var(--brand-hue) 20% 92%);
+    --surface4-light: hsl(var(--brand-hue) 20% 85%);
+    --surface-shadow-light: var(--brand-hue) 10% 20%;
+    --shadow-strength-light: .02;
+  
+    /* Dark colors */
+  
+    --brand-dark: hsl(var(--brand-hue) calc(var(--brand-saturation) / 2) calc(var(--brand-lightness) / 1.5));
+    --text1-dark: hsl(var(--brand-hue) 15% 85%);
+    --text2-dark: hsl(var(--brand-hue) 5% 65%);
+    --surface1-dark: hsl(var(--brand-hue) 10% 10%);
+    --surface2-dark: hsl(var(--brand-hue) 10% 15%);
+    --surface3-dark: hsl(var(--brand-hue) 5%  20%);
+    --surface4-dark: hsl(var(--brand-hue) 5% 25%);
+    --surface-shadow-dark: var(--brand-hue) 50% 3%;
+    --shadow-strength-dark: .8;
+}
+
+/* ---------------------- */
+/* defining default styles */
+/* ----------------------- */
+
+:root {
+    --brand: var(--brand-light);
+    --text1: var(--text1-light);
+    --text2: var(--text2-light);
+    --surface1: var(--surface1-light);
+    --surface2: var(--surface2-light);
+    --surface3: var(--surface3-light);
+    --surface4: var(--surface4-light);
+    --surface-shadow: var(--surface-shadow-light);
+    --shadow-strength: var(--shadow-strength-light);
+  
+    /* spacing properties */
+  
+    --spacing-1: 0px;
+    --spacing-2: 1px;
+    --spacing-3: 0.125rem;
+    --spacing-4: 0.25rem;
+    --spacing-5: 0.375rem;
+    --spacing-6: 0.5rem;
+    --spacing-7: 0.625rem;
+    --spacing-8: 0.75rem;
+    --spacing-9: 0.875rem;
+    --spacing-10: 1rem;
+    --spacing-11: 1.25rem;
+    --spacing-12: 1.5rem;
+    --spacing-13: 1.75rem;
+    --spacing-14: 2rem;
+    --spacing-15: 2.25rem;
+    --spacing-16: 2.5rem;
+    --spacing-17: 2.75rem;
+  
+    /* Font sizes */
+  
+    --fs-900: 5rem;
+    --fs-800: 3.5rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1rem;
+    --fs-500: 1.75rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+  
+    /* font-families */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+}
+  
+/* ------------------------- */
+/* User prefrence dark theme */
+/* ------------------------- */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --brand: var(--brand-dark);
+      --text1: var(--text1-dark);
+      --text2: var(--text2-dark);
+      --surface1: var(--surface1-dark);
+      --surface2: var(--surface2-dark);
+      --surface3: var(--surface3-dark);
+      --surface4: var(--surface4-dark);
+      --surface-shadow: var(--surface-shadow-dark);
+      --shadow-strength: var(--shadow-strength-dark);
+    }
+}
+  
+/* ------------------------ */
+/* user applied light theme */
+/* ------------------------ */
+  
+[data-theme="light"] {
+    --brand: var(--brand-light);
+    --text1: var(--text1-light);
+    --text2: var(--text2-light);
+    --surface1: var(--surface1-light);
+    --surface2: var(--surface2-light);
+    --surface3: var(--surface3-light);
+    --surface4: var(--surface4-light);
+    --surface-shadow: var(--surface-shadow-light);
+    --shadow-strength: var(--shadow-strength-light);
+}
+  
+/* ----------------------- */
+/* User Applied dark theme */
+/* ----------------------- */
+  
+[data-theme="dark"] {
+    --brand: var(--brand-dark);
+    --text1: var(--text1-dark);
+    --text2: var(--text2-dark);
+    --surface1: var(--surface1-dark);
+    --surface2: var(--surface2-dark);
+    --surface3: var(--surface3-dark);
+    --surface4: var(--surface4-dark);
+    --surface-shadow: var(--surface-shadow-dark);
+    --shadow-strength: var(--shadow-strength-dark);
+}
+  
+/* -------------------- */
+/* Reset Css properties */
+/* ------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+picture {
+    margin: 0;
+} 
+
+
+/* setup the body */
+  
+body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    line-height: 1.5;
+    min-block-size: 100vh;
+}
+
+/* Make images  */
+
+img,
+picture {
+    max-inline-size: 100%;
+    display: block;
+}
+  
+/* Making form element good */
+
+input,
+button,
+select,
+textarea {
+    font: inherit;
+}
+  
+/* remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {  
+*,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+}
+  
+
+/* --------------- */
+/* Utility classes */
+/* --------------- */
+
+
+/* Shadow utility */
+.main-shadow {
+    box-shadow:
+      0 2.8px 2.2px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .03)),
+      0 6.7px 5.3px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .01)),
+      0 12.5px 10px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .02)),
+      0 22.3px 17.9px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .02)),
+      0 41.8px 33.4px hsl(var(--surface-shadow) / calc(var(--shadow-strength) + .03)),
+      0 100px 80px hsl(var(--surface-shadow) / var(--shadow-strength));
+}
+
+/* background & color utility */
+.surface-one {
+    background-color: var(--surface1);
+    color: var(--text2);
+}
+
+.surface-two {
+    background-color: var(--surface2);
+    color: var(--text2);
+}
+
+.surface-three {
+    background-color: var(--surface3);
+    color: var(--text1);
+}
+
+.surface-four {
+    background-color: var(--surface4);
+    color: var(--text1);
+}
+
+.flex {
+    display: flex;
+    gap: var(--spacing-10, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--spacing-10, 1rem);
+}
+
+.flow-space > * + * {
+    margin-block-start: var(--spacing-10, 1rem);
+}
+  
+.container {
+    max-width: 80rem;
+    padding-inline: 2em;
+    margin-inline: auto;
+}
+  
+.sr-only {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* typography */
+  
+.font-family-serif { font-family: var(--ff-serif); } 
+.font-family-sans-cond { font-family: var(--ff-sans-cond); } 
+.font-family-sans-normal { font-family: var(--ff-sans-normal); } 
+
+.letter-spacing-big { letter-spacing: 4.75px; } 
+.letter-spacing-medium { letter-spacing: 2.7px; } 
+.letter-spacing-small { letter-spacing: 2.35px; } 
+  
+.uppercase { text-transform: uppercase; }
+  
+.font-size-900 { font-size: var(--fs-900); }
+.font-size-800 { font-size: var(--fs-800); }
+.font-size-700 { font-size: var(--fs-700); }
+.font-size-600 { font-size: var(--fs-600); }
+.font-size-500 { font-size: var(--fs-500); }
+.font-size-400 { font-size: var(--fs-400); }
+.font-size-300 { font-size: var(--fs-300); }
+.font-size-200 { font-size: var(--fs-200); }
+  
+  
+.font-size-900,
+.font-size-800,
+.font-size-700,
+.font-size-600 {
+    line-height: 1.1;
+}  

@@ -11,17 +11,36 @@
     <link rel="stylesheet" href="/css/design-system.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
     <title>Nova UI</title>
 </head>
 <body class="surface-one">
+    <aside class="sidebar grid" id="sidenav-open">
+      <section class="sidebar__content">
+        <div class="sidebar__top flex">
+          <h2 class="sidebar__title">Nova UI</h2>
+        </div>
+        <div class="sidebar__bottom">
+          <ul class="flex sidebar__list">
+            <a href="/index.html" class="sidebar__list-item"><li>Home</li></a>
+            <a href="/pages/intro.html" class="sidebar__list-item"><li>Docs</li></a>
+            <a href="https://github.com/manish591/NovaUI" class="sidebar__list-item"><li>Github</li></a>
+            <a href="#" class="sidebar__list-item"><li>About Me</li></a>
+          </ul>
+        </div>
+      </section>
+      <a href="#" id="sidenav-close" class="sidebar__close" title="Close Menu"></a>
+    </aside>
     <header class="surface-two shadow-one">
         <nav class="nav row">
           <ul class="nav__list row">
-            <img
-              src="/assets/menu_black_24dp (1).svg"
-              alt=""
-              class="nav__hamburger nav__item"
-            />
+            <a href="#sidenav-open" id="sidenav-button" class="hamburger" title="Open Menu" aria-label="Open Menu">
+              <img
+                src="/assets/menu_black_24dp (1).svg"
+                alt=""
+                class="nav__hamburger nav__item"
+              />
+            </a>
             <li class="nav__item logo">Nova UI</li>
           </ul>
           <ul class="nav__list hide nav__list--box surface-three">
@@ -30,14 +49,14 @@
             <a href="https://github.com/manish591/NovaUI" class="nav__item nav__item--pages"><li>Github</li></a>
             <a href="#" class="nav__item nav__item--pages"><li>About Me</li></a>
           </ul>
-          <ul class="nav__links hide row">
+          <ul class="nav__links row">
             <a href="https://github.com/manish591"
               ><img class="nav__img" src="/assets/github.png" alt=""
             /></a>
-            <a href="https://twitter.com/manishdevrani77"
+            <a class="hide" href="https://twitter.com/manishdevrani77"
               ><img class="nav__img" src="/assets/twitter.png" alt=""
             /></a>
-            <a href="https://www.linkedin.com/in/manishdevrani77/"
+            <a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
               ><img class="nav__img" src="/assets/linkedin.png" alt=""
             /></a>
             <button class="theme-toggle nav__img nav__theme nav__item" id="theme-toggle" data-label="auto"></button>

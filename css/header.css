@@ -106,12 +106,14 @@ ul {
     background-image: url("/assets/light_mode_white_24dp.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 
 [data-label="light"] {
     background-image: url("/assets/dark_mode_black_24dp.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 
 @media (min-width: 1000px) {
@@ -125,6 +127,14 @@ ul {
 
     .nav__hamburger {
         display: none;
+    }
+
+    [data-label="dark"] {
+        background-size: unset;
+    }
+    
+    [data-label="light"] {
+        background-size: unset;
     }
 }
 

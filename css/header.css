@@ -58,6 +58,35 @@ ul {
     background-color: rgba(128, 128, 128, 0.116);
 }
 
+.theme-toggle {
+    background: none;
+    border: none;
+    inline-size: 2rem;
+    block-size: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    outline-offset: 3px;
+    cursor: pointer;
+    opacity: .6;
+    transition: opacity 250ms ease-in-out;
+}
+
+.theme-toggle:hover {
+    opacity: 1;
+}
+
+[data-label="dark"] {
+    background-image: url("/assets/light_mode_black_24dp\ \(1\).svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+[data-label="light"] {
+    background-image: url("/assets/dark_mode_black_24dp.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media (min-width: 1000px) {
     .nav__list {
         gap: 50px;

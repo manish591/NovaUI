@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova-Documentation</title>
     <script src="/javascript/theme.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +12,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/comp-page.css">
+    <title>Nova:Alert</title>
 </head>
 <body class="surface-one">
     <aside class="sidebar grid" id="sidenav-open">
@@ -55,7 +55,7 @@
         <a href="#" id="sidenav-close" class="sidebar__close" title="Close Menu"></a>
     </aside>
     <header class="surface-two shadow-one">
-          <nav class="nav row">
+        <nav class="nav row">
             <ul class="nav__list row">
               <a href="#sidenav-open" id="sidenav-button" class="hamburger nav__hamburger" title="Open Menu" aria-label="Open Menu">
                 <img
@@ -84,7 +84,7 @@
               /></a>
               <button class="theme-toggle nav__img nav__theme nav__item" id="theme-toggle" data-label="auto"></button>
             </ul>
-          </nav>
+        </nav>
     </header>
     <div class="component component--grid">
         <section class="sidenav flow-space">
@@ -92,10 +92,10 @@
                 <h3 class="sidenav__title">Getting Started</h3>
                 <ul class="sidenav__list">
                     <a href="/pages/intro.html" class="sidenav__items-link"><li class="sidenav__items">Installation</li></a>
-                    <a href="#"><li class="sidenav__items">Learn</li></a>
-                    <a href="#"><li class="sidenav__items">Usage</li></a>
-                    <a href="#"><li class="sidenav__items">Examples</li></a>
-                    <a href="#"><li class="sidenav__items">Conclusion</li></a>
+                    <a href="/pages/conclusion.html"><li class="sidenav__items">Learn</li></a>
+                    <a href="/pages/color.html"><li class="sidenav__items">Usage</li></a>
+                    <a href="/pages/typography.html"><li class="sidenav__items">Examples</li></a>
+                    <a href="/pages/conclusion.html"><li class="sidenav__items">Conclusion</li></a>
                 </ul>
             </div>
             <div class="sidenav__components">
@@ -123,27 +123,7 @@
             </div>
         </section>
         <section class="feed">
-            <div class="space-bottom flow-space-2">
-                <h1 class="feed__title">Introduction to Nova</h1>
-                <p class="feed__text">Nova is a collection of CSS modules, layouts and components to kick start any web project. The library is open source and maintained by the community. Contributing to it will help you build beautiful responsive sites in no time. This is a collection of the most common design patterns, reusable components and best practices to use in your next project. It aims to increase productivity by allowing you to focus on designing beautiful interfaces, instead of wasting time thinking how to build it.</p>
-            </div>
-            <div class="space-bottom flow-space-2">
-                <h3 class="feed__subtitle">Installation Guide</h3>
-                <p class="feed__text">In order to introduce Nova to your project, Copy the Link given below and paste it in the &lt;head&gt; tag of your html, above all other style sheets.</p>
-                <div class="feed__code">
-                    <code>
-                        <iframe
-                        src="https://carbon.now.sh/embed/3lVYmbAcLQa79JyukDSx"
-                        style="border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                      </iframe>
-                    </code>
-                </div>
-            </div>
-            <div class="space-bottom flow-space-2">
-                <h3 class="feed__subtitle">Customizing Themes</h3>
-                <p class="feed__text">You can customize your components.</p>
-            </div>
+            
         </section>
     </div>
 </body>

@@ -1,0 +1,72 @@
+.md-24 {
+    font-size: 30px !important;
+    text-align: center;
+}
+
+.badge {
+    position: relative;
+}
+
+.badge__info {
+    position: absolute;
+    border-radius: 50%;
+    color: var(--surface4);
+    font-size: var(--fs-100);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+}
+
+.badge__info--standard {
+    top: -3px;
+    right: -5px;
+    background-color: var(--text2);
+    width: 17px;
+}
+
+.badge__btn {
+    padding: .5rem 2.5rem;
+    border: none;
+    background: var(--brand);
+    color: var(--text1);
+    border-radius: 3px;
+    opacity: .6;
+}
+
+.badge__btn:hover {
+    opacity: 1;
+}
+
+.badge__info--btn-right {
+    background-color: var(--text2);
+    top: -5px;
+    right: -10px;
+    width: 20px;
+}
+
+.badge__info--btn-left {
+    background-color: var(--text2);
+    top: -5px;
+    left: -5px;
+    width: 20px;
+}
+
+.badge__text {
+    font-size: 1.2rem;
+}
+
+.badge__info--text-right {
+    background-color: var(--text2);
+    top: -3px;
+    right: -9px;
+    width: 18px;
+}
+
+.badge__info--text-left {
+    background-color: var(--text2);
+    top: -10px;
+    left: -7px;
+    width: 20px;
+    height: 20px;
+}

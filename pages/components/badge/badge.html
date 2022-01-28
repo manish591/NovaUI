@@ -1,129 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova-Documentation</title>
     <script src="/javascript/theme.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/design-system.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/sidebar.css">
-    <link rel="stylesheet" href="/css/comp-page.css">
-</head>
-<body class="surface-one">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/design-system.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/css/comp-page.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/pages/components/badge/badge.css">
+  </head>
+  <body class="surface-one">
     <aside class="sidebar grid" id="sidenav-open">
-        <section class="sidebar__content">
-          <div class="sidebar__top flex">
-            <h2 class="sidebar__title">Nova UI</h2>
-          </div>
-          <div class="sidebar__bottom"> 
-            <ul class="flex sidebar__list">
-              <p class="sidebar__list-category">Get Started</p>  
-              <a href="#" class="sidebar__list-item"><li>Installation</li></a>
-              <a href="#" class="sidebar__list-item"><li>Learn</li></a>
-              <a href="#" class="sidebar__list-item"><li>Usages</li></a>
-              <a href="#" class="sidebar__list-item"><li>Examples</li></a>
-              <a href="#" class="sidebar__list-item"><li>Conclusion</li></a>
-            </ul>
-            <ul class="flex sidebar__list">
-                <p class="sidebar__list-category">Components</p>  
-                <a href="/pages/components/avator/avator.html" class="sidebar__list-item"><li>Avator</li></a>
-                <a href="/pages/components/alert/alert.html" class="sidebar__list-item"><li>Alert</li></a>
-                <a href="/pages/components/badge/badge.html" class="sidebar__list-item"><li>Badge</li></a>
-                <a href="/pages/components/button/button.html" class="sidebar__list-item"><li>Button</li></a>
-                <a href="/pages/components/card/card.html" class="sidebar__list-item"><li>Card</li></a>
-                <a href="/pages/components/image/image.html" class="sidebar__list-item"><li>Images</li></a>
-                <a href="/pages/components/input/input.html" class="sidebar__list-item"><li>Input</li></a>
-                <a href="/pages/components/texts/text.html" class="sidebar__list-item"><li>Text Utilities</li></a>
-                <a href="/pages/components/lists/list.html" class="sidebar__list-item"><li>List</li></a>
-                <a href="/pages/components/navigation/navigation.html" class="sidebar__list-item"><li>Navigation</li></a>
-                <a href="/pages/components/modal/modal.html" class="sidebar__list-item"><li>Modal</li></a>
-                <a href="/pages/components/ratings/ratings.html" class="sidebar__list-item"><li>Ratings</li></a>
-                <a href="/pages/components/toast/toast.html" class="sidebar__list-item"><li>Toast</li></a>
-                <a href="/pages/components/grid/grid.html" class="sidebar__list-item"><li>Simplified Grid</li></a>
-                <a href="/pages/components/slider/slider.html" class="sidebar__list-item"><li>Slider</li></a>
-            </ul>
-            <ul class="flex sidebar__list">
-                <p class="sidebar__list-category">Design System</p>  
-            </ul>
-          </div>
-        </section>
-        <a href="#" id="sidenav-close" class="sidebar__close" title="Close Menu"></a>
+      <section class="sidebar__content">
+        <div class="sidebar__top flex">
+          <h2 class="sidebar__title">Nova UI</h2>
+        </div>
+        <div class="sidebar__bottom">
+          <ul class="flex sidebar__list">
+            <p class="sidebar__list-category">Get Started</p>
+            <a href="#" class="sidebar__list-item"><li>Installation</li></a>
+            <a href="#" class="sidebar__list-item"><li>Learn</li></a>
+            <a href="#" class="sidebar__list-item"><li>Usages</li></a>
+            <a href="#" class="sidebar__list-item"><li>Examples</li></a>
+            <a href="#" class="sidebar__list-item"><li>Conclusion</li></a>
+          </ul>
+          <ul class="flex sidebar__list">
+            <p class="sidebar__list-category">Components</p>
+            <a
+              href="/pages/components/avator/avator.html"
+              class="sidebar__list-item"
+              ><li>Avator</li></a
+            >
+            <a
+              href="/pages/components/alert/alert.html"
+              class="sidebar__list-item"
+              ><li>Alert</li></a
+            >
+            <a
+              href="/pages/components/badge/badge.html"
+              class="sidebar__list-item"
+              ><li>Badge</li></a
+            >
+            <a
+              href="/pages/components/button/button.html"
+              class="sidebar__list-item"
+              ><li>Button</li></a
+            >
+            <a
+              href="/pages/components/card/card.html"
+              class="sidebar__list-item"
+              ><li>Card</li></a
+            >
+            <a
+              href="/pages/components/image/image.html"
+              class="sidebar__list-item"
+              ><li>Images</li></a
+            >
+            <a
+              href="/pages/components/input/input.html"
+              class="sidebar__list-item"
+              ><li>Input</li></a
+            >
+            <a
+              href="/pages/components/texts/text.html"
+              class="sidebar__list-item"
+              ><li>Text Utilities</li></a
+            >
+            <a
+              href="/pages/components/lists/list.html"
+              class="sidebar__list-item"
+              ><li>List</li></a
+            >
+            <a
+              href="/pages/components/navigation/navigation.html"
+              class="sidebar__list-item"
+              ><li>Navigation</li></a
+            >
+            <a
+              href="/pages/components/modal/modal.html"
+              class="sidebar__list-item"
+              ><li>Modal</li></a
+            >
+            <a
+              href="/pages/components/ratings/ratings.html"
+              class="sidebar__list-item"
+              ><li>Ratings</li></a
+            >
+            <a
+              href="/pages/components/toast/toast.html"
+              class="sidebar__list-item"
+              ><li>Toast</li></a
+            >
+            <a
+              href="/pages/components/grid/grid.html"
+              class="sidebar__list-item"
+              ><li>Simplified Grid</li></a
+            >
+            <a
+              href="/pages/components/slider/slider.html"
+              class="sidebar__list-item"
+              ><li>Slider</li></a
+            >
+          </ul>
+          <ul class="flex sidebar__list">
+            <p class="sidebar__list-category">Design System</p>
+          </ul>
+        </div>
+      </section>
+      <a
+        href="#"
+        id="sidenav-close"
+        class="sidebar__close"
+        title="Close Menu"
+      ></a>
     </aside>
     <header class="surface-two shadow-one">
-          <nav class="nav row">
-            <ul class="nav__list row">
-              <a href="#sidenav-open" id="sidenav-button" class="hamburger nav__hamburger" title="Open Menu" aria-label="Open Menu">
-                <img
-                  src="/assets/menu_black_24dp (1).svg"
-                  alt=""
-                  class="nav__item"
-                />
-              </a>
-              <li class="nav__item logo">Nova UI</li>
-            </ul>
-            <ul class="nav__list hide nav__list--box surface-three">
-              <a href="/index.html" class="nav__item nav__item--pages"><li>Home</li></a>
-              <a href="/pages/intro.html" class="nav__item nav__item--pages"><li>Documentation</li></a>
-              <a href="https://github.com/manish591/NovaUI" class="nav__item nav__item--pages"><li>Github</li></a>
-              <a href="#" class="nav__item nav__item--pages"><li>About Me</li></a>
-            </ul>
-            <ul class="nav__links row">
-              <a href="https://github.com/manish591"
-                ><img class="nav__img" src="/assets/github.png" alt=""
-              /></a>
-              <a class="hide" href="https://twitter.com/manishdevrani77"
-                ><img class="nav__img" src="/assets/twitter.png" alt=""
-              /></a>
-              <a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
-                ><img class="nav__img" src="/assets/linkedin.png" alt=""
-              /></a>
-              <button class="theme-toggle nav__img nav__theme nav__item" id="theme-toggle" data-label="auto"></button>
-            </ul>
-          </nav>
+      <nav class="nav row">
+        <ul class="nav__list row">
+          <a
+            href="#sidenav-open"
+            id="sidenav-button"
+            class="hamburger nav__hamburger"
+            title="Open Menu"
+            aria-label="Open Menu"
+          >
+            <img
+              src="/assets/menu_black_24dp (1).svg"
+              alt=""
+              class="nav__item"
+            />
+          </a>
+          <li class="nav__item logo">Nova UI</li>
+        </ul>
+        <ul class="nav__list hide nav__list--box surface-three">
+          <a href="/index.html" class="nav__item nav__item--pages"
+            ><li>Home</li></a
+          >
+          <a href="/pages/intro.html" class="nav__item nav__item--pages"
+            ><li>Documentation</li></a
+          >
+          <a
+            href="https://github.com/manish591/NovaUI"
+            class="nav__item nav__item--pages"
+            ><li>Github</li></a
+          >
+          <a href="#" class="nav__item nav__item--pages"><li>About Me</li></a>
+        </ul>
+        <ul class="nav__links row">
+          <a href="https://github.com/manish591"
+            ><img class="nav__img" src="/assets/github.png" alt=""
+          /></a>
+          <a class="hide" href="https://twitter.com/manishdevrani77"
+            ><img class="nav__img" src="/assets/twitter.png" alt=""
+          /></a>
+          <a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
+            ><img class="nav__img" src="/assets/linkedin.png" alt=""
+          /></a>
+          <button
+            class="theme-toggle nav__img nav__theme nav__item"
+            id="theme-toggle"
+            data-label="auto"
+          ></button>
+        </ul>
+      </nav>
     </header>
     <div class="component component--grid">
-        <section class="sidenav flow-space">
-            <div class="sidenav__get-started">
-                <h3 class="sidenav__title">Getting Started</h3>
-                <ul class="sidenav__list">
-                    <a href="/pages/intro.html" class="sidenav__items-link"><li class="sidenav__items">Installation</li></a>
-                    <a href="#"><li class="sidenav__items">Learn</li></a>
-                    <a href="#"><li class="sidenav__items">Usage</li></a>
-                    <a href="#"><li class="sidenav__items">Examples</li></a>
-                    <a href="#"><li class="sidenav__items">Conclusion</li></a>
-                </ul>
+      <section class="sidenav flow-space">
+        <div class="sidenav__get-started">
+          <h3 class="sidenav__title">Getting Started</h3>
+          <ul class="sidenav__list">
+            <a href="/pages/intro.html" class="sidenav__items-link"
+              ><li class="sidenav__items">Installation</li></a
+            >
+            <a href="#"><li class="sidenav__items">Learn</li></a>
+            <a href="#"><li class="sidenav__items">Usage</li></a>
+            <a href="#"><li class="sidenav__items">Examples</li></a>
+            <a href="#"><li class="sidenav__items">Conclusion</li></a>
+          </ul>
+        </div>
+        <div class="sidenav__components">
+          <h3 class="sidenav__title">Components</h3>
+          <ul class="sidenav__list">
+            <a href="/pages/components/avator/avator.html"
+              ><li class="sidenav__items">Avator</li></a
+            >
+            <a href="/pages/components/alert/alert.html"
+              ><li class="sidenav__items">Alert</li></a
+            >
+            <a href="/pages/components/badge/badge.html"
+              ><li class="sidenav__items">Badge</li></a
+            >
+            <a href="/pages/components/button/button.html"
+              ><li class="sidenav__items">Button</li></a
+            >
+            <a href="/pages/components/card/card.html"
+              ><li class="sidenav__items">Card</li></a
+            >
+            <a href="/pages/components/image/image.html"
+              ><li class="sidenav__items">Image</li></a
+            >
+            <a href="/pages/components/input/input.html"
+              ><li class="sidenav__items">Input</li></a
+            >
+            <a href="/pages/components/texts/text.html"
+              ><li class="sidenav__items">Text Utilities</li></a
+            >
+            <a href="/pages/components/lists/list.html"
+              ><li class="sidenav__items">List</li></a
+            >
+            <a href="/pages/components/navigation/navigation.html"
+              ><li class="sidenav__items">Navigation</li></a
+            >
+            <a href="/pages/components/modal/modal.html"
+              ><li class="sidenav__items">Modal</li></a
+            >
+            <a href="/pages/components/ratings/ratings.html"
+              ><li class="sidenav__items">Ratings</li></a
+            >
+            <a href="/pages/components/toast/toast.html"
+              ><li class="sidenav__items">Toast</li></a
+            >
+            <a href="/pages/components/grid/grid.html"
+              ><li class="sidenav__items">Simplified Grid</li></a
+            >
+            <a href="/pages/components/slider/slider.html"
+              ><li class="sidenav__items">Slider</li></a
+            >
+          </ul>
+        </div>
+        <div class="sidenav__design-system">
+          <h3 class="sidenav__title">Design System</h3>
+        </div>
+      </section>
+      <section class="feed">
+        <div class="space-bottom flow-space-2">
+          <h1 class="feed__title">Badges</h1>
+          <p class="feed__text">
+            Badges are used to draw user attention on chnage. That can be a
+            change in status and count.
+          </p>
+        </div>
+        <div class="flow-space space-bottom">
+          <h3 class="feed__subtitle">Icon Badges</h3>
+          <p class="feed__text">
+            Icon badges are very common that we can see in e-commerce website.
+          </p>
+          <div class="feed__component-display">
+            <section class="feed__demo feed__demo--flex">
+              <section class="badge">
+                <span class="material-icons md-24">favorite_border</span>
+                <p class="badge__info badge__info--standard">2</p>
+              </section>
+            </section>
+            <div class="feed__source-display">
+              <button class="feed__code-source">Source</button>
+              <img
+                src="/images/keyboard_arrow_down_black_18dp.svg"
+                alt=""
+                class="feed__source-icon"
+              />
             </div>
-            <div class="sidenav__components">
-                <h3 class="sidenav__title">Components</h3>
-                <ul class="sidenav__list">
-                    <a href="/pages/components/avator/avator.html"><li class="sidenav__items">Avator</li></a>
-                    <a href="/pages/components/alert/alert.html"><li class="sidenav__items">Alert</li></a>
-                    <a href="/pages/components/badge/badge.html"><li class="sidenav__items">Badge</li></a>
-                    <a href="/pages/components/button/button.html"><li class="sidenav__items">Button</li></a>
-                    <a href="/pages/components/card/card.html"><li class="sidenav__items">Card</li></a>
-                    <a href="/pages/components/image/image.html"><li class="sidenav__items">Image</li></a>
-                    <a href="/pages/components/input/input.html"><li class="sidenav__items">Input</li></a>
-                    <a href="/pages/components/texts/text.html"><li class="sidenav__items">Text Utilities</li></a>
-                    <a href="/pages/components/lists/list.html"><li class="sidenav__items">List</li></a>
-                    <a href="/pages/components/navigation/navigation.html"><li class="sidenav__items">Navigation</li></a>
-                    <a href="/pages/components/modal/modal.html"><li class="sidenav__items">Modal</li></a>
-                    <a href="/pages/components/ratings/ratings.html"><li class="sidenav__items">Ratings</li></a>
-                    <a href="/pages/components/toast/toast.html"><li class="sidenav__items">Toast</li></a>
-                    <a href="/pages/components/grid/grid.html"><li class="sidenav__items">Simplified Grid</li></a>
-                    <a href="/pages/components/slider/slider.html"><li class="sidenav__items">Slider</li></a>
-                </ul>
+            <div class="feed__code feed__code--hide">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
             </div>
-            <div class="sidenav__design-system">
-                <h3 class="sidenav__title">Design System</h3>
+          </div>
+        </div>
+        <div class="flow-space space-bottom">
+          <h3 class="feed__subtitle">Button Badges</h3>
+          <p class="feed__text">
+            One of the most common thing you can see on the web is badges with
+            button. They are mostly attached in the top right corner of the
+            button.
+          </p>
+          <div class="feed__component-display">
+            <section class="feed__demo feed__demo--flex">
+              <section class="badge">
+                <button class="badge__btn">Hide</button>
+                <p class="badge__info badge__info--btn-right">99+</p>
+              </section>
+              <section class="badge">
+                  <button class="badge__btn">Hide</button>
+                  <p class="badge__info badge__info--btn-left">2</p>
+              </section>
+            </section>
+            <div class="feed__source-display">
+              <button class="feed__code-source">Source</button>
+              <img
+                src="/images/keyboard_arrow_down_black_18dp.svg"
+                alt=""
+                class="feed__source-icon"
+              />
             </div>
-        </section>
-        <section class="feed">
-        </section>
+            <div class="feed__code feed__code--hide">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+        </div>
+        <div class="flow-space space-bottom">
+          <h3 class="feed__subtitle">Badges with texts</h3>
+          <p class="feed__text">
+            Texts over badges is also available in our component library.
+          </p>
+          <div class="feed__component-display">
+            <section class="feed__demo feed__demo--flex">
+              <section class="badge">
+                <p class="badge__text">This is the text</p>
+                <p class="badge__info badge__info--text-right">2</p>
+              </section>
+              <section class="badge">
+                  <p class="badge__text">This is the text</p>
+                  <p class="badge__info badge__info--text-left">2</p>
+              </section>
+            </section>
+            <div class="feed__source-display">
+              <button class="feed__code-source">Source</button>
+              <img
+                src="/images/keyboard_arrow_down_black_18dp.svg"
+                alt=""
+                class="feed__source-icon"
+              />
+            </div>
+            <div class="feed__code feed__code--hide">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>

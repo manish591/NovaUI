@@ -1,0 +1,41 @@
+.avator {
+    inline-size: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.avator--small {
+    inline-size: 30px;
+}
+
+.avator--large {
+    inline-size: 50px;
+}
+
+.avator--medium {
+    inline-size: 40px;
+}
+
+.avator--initial {
+    background-color: var(--surface4);
+    color: var(--text2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avator--initial > p {
+    opacity: .8;
+}
+
+.avator--square {
+    border-radius: 0;
+}
+
+.avator--rounded {
+    border-radius: 6px;
+}
+
+.avator--circle {
+    border-radius: 50%;
+}

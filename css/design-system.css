@@ -80,6 +80,7 @@
     --fs-400: 1rem;
     --fs-300: 0.9375rem;
     --fs-200: 0.875rem;
+    --fs-100: 0.5rem;
   
     /* font-families */
     --ff-sans-cond: "Barlow Condensed", sans-serif;

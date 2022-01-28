@@ -17,13 +17,12 @@
 }
 
 .sidebar__close {
-    width: 100%;
-    height: 100%;
+    inline-size: 100%;
+    block-size: 100%;
 }
 
 .sidebar__close, 
 .hamburger {
-    user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -33,8 +32,8 @@
 }
 
 .sidebar__top {
-    width: 100%;
-    height: 100px;
+    inline-size: 100%;
+    block-size: 100px;
     align-items: end;
     justify-content: start;
     padding-inline-start: var(--spacing-12);

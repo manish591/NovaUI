@@ -1,13 +1,3 @@
-a {
-    text-decoration: none;
-}
-
-.space-bottom {
-    margin-bottom: var(--spacing-16);
-    padding-bottom: var(--spacing-16);
-    border-bottom: .8px solid var(--surface4);
-}
-
 .component {
     width: min(90%, 1200px);
     margin: 8vh auto;

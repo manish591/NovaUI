@@ -4,7 +4,7 @@
 
 * {
     --brand-color: hsl(210, 100%, 46%);
-  
+
     --brand-hue: 210;
     --brand-saturation: 100%;
     --brand-lightness: 46%;
@@ -82,7 +82,6 @@
     --fs-200: 0.875rem;
   
     /* font-families */
-    --ff-serif: "Bellefair", serif;
     --ff-sans-cond: "Barlow Condensed", sans-serif;
     --ff-sans-normal: "Barlow", sans-serif;
 }
@@ -186,6 +185,16 @@ select,
 textarea {
     font: inherit;
 }
+
+/* removing default styling */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
   
 /* remove animations for people who've turned them off */
 
@@ -253,6 +262,8 @@ textarea {
     gap: var(--spacing-10, 1rem);
 }
 
+/* spacing utilities */
+
 .flow-space > * + * {
     margin-block-start: var(--spacing-10, 1rem);
 }
@@ -260,7 +271,15 @@ textarea {
 .flow-space-2 > * + * {
     margin-block-start: var(--spacing-8);
 }
+
+.space-bottom {
+    margin-bottom: var(--spacing-16);
+    padding-bottom: var(--spacing-16);
+    border-bottom: .8px solid var(--surface4);
+}
   
+/* container utilities */
+
 .container {
     max-width: 80rem;
     padding-inline: 2em;
@@ -280,8 +299,7 @@ textarea {
 }
 
 /* typography */
-  
-.font-family-serif { font-family: var(--ff-serif); } 
+
 .font-family-sans-cond { font-family: var(--ff-sans-cond); } 
 .font-family-sans-normal { font-family: var(--ff-sans-normal); } 
 

@@ -1,7 +1,3 @@
-ul {
-    list-style: none;
-}
-
 .row {
     display: flex;
     justify-content: space-between;
@@ -14,10 +10,6 @@ ul {
     color: var(--brand);
 }
 
-/* header {
-    box-shadow: 0 0 6px 2px rgba(29, 29, 29, 0.226);
-} */
-
 .nav {
     padding-block: 3vh;
     padding-inline: 0;
@@ -27,11 +19,11 @@ ul {
 }
 
 .nav__list {
-    gap: 20px;
+    gap: var(--spacing-5);
 }
 
 .nav__links {
-    gap: 25px;
+    gap: var(--spacing-9);
 }
 
 .nav__item {
@@ -39,12 +31,11 @@ ul {
 }
 
 .nav__img {
-    block-size: 20px;
+    block-size: 1.5rem;
 }
 
 .nav__hamburger {
-    width: 35px;
-    margin-inline-end: 1vh;
+    width: 30px;
 }
 
 .hide {
@@ -61,8 +52,9 @@ ul {
     overflow: hidden;
     position: relative;
     text-decoration: none;
-    font-size: var(--fs-300);
+    font-size: var(--fs-200);
     color: var(--text1);
+    font-weight: bold;
 }
 
 .nav__item--pages::after {
@@ -116,6 +108,33 @@ ul {
     background-size: contain;
 }
 
+@media (max-width: 450px) {
+    html {
+        font-size: 75%;
+    }
+
+    .nav__img {
+        block-size: 15px;
+    }
+}
+
+@media (min-width: 450px) {
+    [data-label="dark"] {
+        background-size: unset;
+    }
+    
+    [data-label="light"] {
+        background-size: unset;
+    }
+}
+
+@media (min-width: 600px) {
+    .nav {
+        padding-block: 4vh;
+        padding-inline: 0;
+    }
+}
+
 @media (min-width: 1000px) {
     .nav__list {
         gap: 50px;
@@ -127,30 +146,5 @@ ul {
 
     .nav__hamburger {
         display: none;
-    }
-
-    [data-label="dark"] {
-        background-size: unset;
-    }
-    
-    [data-label="light"] {
-        background-size: unset;
-    }
-}
-
-@media (max-width: 450px) {
-    html {
-        font-size: 75%;
-    }
-
-    .nav__img {
-        block-size: 15px;
-    }
-}
-
-@media (min-width: 600px) {
-    .nav {
-        padding-block: 4vh;
-        padding-inline: 0;
     }
 }

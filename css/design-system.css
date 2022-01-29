@@ -3,7 +3,7 @@
 /* --------------------- */
 
 * {
-    --brand-color: hsl(210, 100%, 46%);
+    --brand-color: hsl(210, 7%, 21%);
 
     --brand-hue: 210;
     --brand-saturation: 100%;
@@ -49,6 +49,10 @@
     --surface-shadow: var(--surface-shadow-light);
     --shadow-strength: var(--shadow-strength-light);
   
+     /* components colors */
+
+     --light-clr: #fff;
+
     /* spacing properties */
   
     --spacing-1: 0px;
@@ -71,7 +75,7 @@
   
     /* Font sizes */
   
-    --fs-900-large: 3rem;
+    --fs-900-large: 4rem;
     --fs-900-small: 2.8rem;
     --fs-800: 2rem;
     --fs-700: 1.75rem;
@@ -311,6 +315,7 @@ a {
 .uppercase { text-transform: uppercase; }
   
 .font-size-900 { font-size: var(--fs-900); }
+.font-size-900-large { font-size: var(--fs-900-large); }
 .font-size-800 { font-size: var(--fs-800); }
 .font-size-700 { font-size: var(--fs-700); }
 .font-size-600 { font-size: var(--fs-600); }
@@ -321,6 +326,7 @@ a {
   
   
 .font-size-900,
+.font-size-900-large,
 .font-size-800,
 .font-size-700,
 .font-size-600 {

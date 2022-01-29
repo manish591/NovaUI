@@ -57,7 +57,7 @@
 .sidebar__list {
     gap: var(--spacing-12);
     flex-direction: column;
-    padding-inline-start: var(--spacing-12);
+    padding-inline: var(--spacing-12);
     padding-block: var(--spacing-12);
     border-block-end: 1px solid var(--surface4);
 }
@@ -67,6 +67,11 @@
     color: var(--text2);
     font-size: var(--fs-500);
     font-weight: bold;
+}
+
+.sidebar__list-item a {
+    display: block;
+    color: unset;
 }
 
 .sidebar__list-category {

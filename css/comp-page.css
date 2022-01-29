@@ -41,6 +41,11 @@
     background-color: var(--surface4);
 }
 
+.sidenav__items a {
+    color: unset;
+    display: block;
+}
+
 .feed__title {
     font-size: var(--fs-800);
 }

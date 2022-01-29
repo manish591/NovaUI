@@ -1,22 +1,22 @@
-.avator {
+.avatar {
     inline-size: 40px;
     aspect-ratio: 1;
     border-radius: 50%;
 }
 
-.avator--small {
+.avatar--small {
     inline-size: 30px;
 }
 
-.avator--large {
+.avatar--large {
     inline-size: 50px;
 }
 
-.avator--medium {
+.avatar--medium {
     inline-size: 40px;
 }
 
-.avator--initial {
+.avatar--initial {
     background-color: var(--surface4);
     color: var(--text2);
     display: flex;
@@ -24,18 +24,18 @@
     justify-content: center;
 }
 
-.avator--initial > p {
+.avatar--initial > p {
     opacity: .8;
 }
 
-.avator--square {
+.avatar--square {
     border-radius: 0;
 }
 
-.avator--rounded {
+.avatar--rounded {
     border-radius: 6px;
 }
 
-.avator--circle {
+.avatar--circle {
     border-radius: 50%;
 }

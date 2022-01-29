@@ -1,0 +1,41 @@
+.avatar {
+    inline-size: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.avatar--small {
+    inline-size: 30px;
+}
+
+.avatar--large {
+    inline-size: 50px;
+}
+
+.avatar--medium {
+    inline-size: 40px;
+}
+
+.avatar--initial {
+    background-color: var(--surface4);
+    color: var(--text2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar--initial > p {
+    opacity: .8;
+}
+
+.avatar--square {
+    border-radius: 0;
+}
+
+.avatar--rounded {
+    border-radius: 6px;
+}
+
+.avatar--circle {
+    border-radius: 50%;
+}

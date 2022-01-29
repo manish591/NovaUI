@@ -73,6 +73,10 @@
     transform: translateX(0%);
 }
 
+.nav__item--pages a {
+    color: unset;
+}
+
 /* ------------ */
 /* Theme-toggle */
 /* ------------ */

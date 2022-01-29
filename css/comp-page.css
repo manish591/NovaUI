@@ -41,6 +41,11 @@
     background-color: var(--surface4);
 }
 
+.sidenav__items a {
+    color: unset;
+    display: block;
+}
+
 .feed__title {
     font-size: var(--fs-800);
 }
@@ -125,6 +130,7 @@
     position: relative;
     text-transform: uppercase;
     font-size: .7rem;
+    color: var(--text2);
 }
 
 .feed__source-display {
@@ -149,13 +155,13 @@
 .feed__demo--flex {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: var(--spacing-12);
 }
 
 .feed__demo--columns {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: var(--spacing-12);
 }
 
 @media (min-width: 600px) {

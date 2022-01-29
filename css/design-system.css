@@ -3,7 +3,7 @@
 /* --------------------- */
 
 * {
-    --brand-color: hsl(210, 7%, 21%);
+    --brand-color: hsl(210, 100%, 49%);
 
     --brand-hue: 210;
     --brand-saturation: 100%;
@@ -52,6 +52,12 @@
      /* components colors */
 
      --light-clr: #fff;
+     --clr-primary: #0E7EB9;
+     --clr-secondary: #4B4B53;
+     --clr-danger: #C92323;
+     --clr-success: #1F994C;
+     --clr-warning: #C66D05;
+     --clr-text: #fff;
 
     /* spacing properties */
   

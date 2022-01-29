@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/comp-page.css">
+    <link rel="stylesheet" href="/pages/components/alert/alert.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Nova:Alert</title>
 </head>
 <body class="surface-one">
@@ -214,7 +219,191 @@
         </div>
       </section>
         <section class="feed">
-            
+          <div class="space-bottom flow-space-2">
+            <h1 class="feed__title">Alert</h1>
+            <p class="feed__text">An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.</p>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Simple Alert</h3>
+            <p class="feed__text">
+              These are simple alert can be created using class alert and for varients use alert primary, danger etc.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--columns">
+                <div class="alert alert--primary">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                </div>
+                <div class="alert alert--secondary">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                </div>
+                <div class="alert alert--success">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                </div>
+                <div class="alert alert--danger">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                </div>
+                <div class="alert alert--warning">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+                <img
+                  src="/images/keyboard_arrow_down_black_18dp.svg"
+                  alt=""
+                  class="feed__source-icon"
+                />
+              </div>
+              <div class="feed__code feed__code--hide">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Fancy Alert</h3>
+            <p class="feed__text">
+              They are extension of simple alert. If you want better looking alerts.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--columns">
+                <div class="alert alert__fancy alert__fancy--primary">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                </div>
+                <div class="alert alert__fancy alert__fancy--secondary">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                </div>
+                <div class="alert alert__fancy alert__fancy--success">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                </div>
+                <div class="alert alert__fancy alert__fancy--danger">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                </div>
+                <div class="alert alert__fancy alert__fancy--warning">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+                <img
+                  src="/images/keyboard_arrow_down_black_18dp.svg"
+                  alt=""
+                  class="feed__source-icon"
+                />
+              </div>
+              <div class="feed__code feed__code--hide">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Alerts With Icon</h3>
+            <p class="feed__text">
+              If you like icons with alert import material icon link and use pre defined classes.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--columns">
+                <div class="alert alert__fancy alert__fancy--primary alert--flex">
+                  <span class="material-icons alert__icon alert__icon--primary">info</span>
+                  <div>
+                    <strong>This Is Primary Alert!</strong>
+                    <p class="alert__gap--top">This is super informative alert!</p>
+                  </div>
+                </div>
+                <div class="alert alert__fancy alert__fancy--secondary alert--flex">
+                  <span class="material-icons alert__icon alert__icon--secondary">settings</span>
+                  <div>
+                    <strong>This Is Secondary Alert!</strong>
+                    <p class="alert__gap--top">Your Settings Have Been Updated!</p>
+                  </div>
+                </div>
+                <div class="alert alert__fancy alert__fancy--success alert--flex">
+                  <span class="material-icons alert__icon alert__icon--success">check</span>
+                  <div>
+                    <strong>This Is Success Alert!</strong>
+                    <p class="alert__gap--top">This Request Has Been Accepted!</p>
+                  </div>
+                </div>
+                <div class="alert alert__fancy alert__fancy--warning alert--flex">
+                  <span class="material-icons alert__icon alert__icon--warning">warning</span>
+                  <div>
+                    <strong>This Is Warning Alert!</strong>
+                    <p class="alert__gap--top">Please Login To Continue!</p>
+                  </div>
+                </div>
+                <div class="alert alert__fancy alert__fancy--danger alert--flex">
+                  <span class="material-icons alert__icon alert__icon--danger">error</span>
+                  <div>
+                    <strong>This Is Danger Alert!</strong>
+                    <p class="alert__gap--top">Your Account Has Been Deleted!</p>
+                  </div>
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+                <img
+                  src="/images/keyboard_arrow_down_black_18dp.svg"
+                  alt=""
+                  class="feed__source-icon"
+                />
+              </div>
+              <div class="feed__code feed__code--hide">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Dismissble Alert</h3>
+            <p class="feed__text">
+              With javascript you can also add dismissable alert.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--columns">
+                <div class="alert alert__fancy alert__fancy--primary alert--dismissable flex">
+                  <p>This Is A Primary Alert - Check It Now!</p>
+                  <span class="material-icons alert__icon alert__dismissable-icon">clear</span>
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+                <img
+                  src="/images/keyboard_arrow_down_black_18dp.svg"
+                  alt=""
+                  class="feed__source-icon"
+                />
+              </div>
+              <div class="feed__code feed__code--hide">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
         </section>
     </div>
 </body>

@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+header {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 10;
+}
+
 .logo {
     font-size: var(--fs-600);
     font-weight: 700;

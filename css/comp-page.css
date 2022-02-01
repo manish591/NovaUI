@@ -1,6 +1,7 @@
 .component {
     width: min(90%, 1200px);
     margin: 8vh auto;
+    position: relative;
 }
 
 .component--grid {
@@ -15,6 +16,8 @@
     height: calc(100vh - 11.5rem);
     overflow: hidden;
     overflow-y: auto;
+    position: fixed;
+    inline-size: 200px;
 }
 
 .sidenav__title {
@@ -173,7 +176,7 @@
 
 @media (min-width: 1000px) {
     .component {
-        margin-top: 12vh;
+        margin-top: 10vh;
     }
 
     .sidenav {
@@ -188,6 +191,10 @@
     .component--grid {
         display: grid;
         gap: var(--spacing-12);
-        grid-template-columns: 230px min(90%, 800px);
+        grid-template-columns: 230px 1fr;
+    }
+
+    .feed {
+        grid-column-start: 2;
     }
 }

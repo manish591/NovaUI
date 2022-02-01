@@ -9,7 +9,7 @@
     visibility: hidden;
     transition: transform 500ms ease-in-out;
     transform: translateX(-100%);
-    z-index: 10;
+    z-index: 11;
 }
 
 .sidebar__content {

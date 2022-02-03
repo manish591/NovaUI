@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/comp-page.css">
+    <link rel="stylesheet" href="/pages/components/button/button.css">
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
 </head>
 <body class="surface-one">
   <aside class="sidebar grid" id="sidenav-open">
@@ -214,6 +219,247 @@
         </div>
       </section>
         <section class="feed">
+          <div class="space-bottom flow-space-2">
+            <h1 class="feed__title">Button</h1>
+            <p class="feed__text">Buttons are everywhere on the web. They represent actions that user can take. We can see buttons throughout the we like in cards, in modals etc.</p>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Contained Buttons</h3>
+            <p class="feed__text">
+              This is the most basic type of button you can see on the web. Use the class button ans button--contained.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--row">
+                <button class="btn btn--contained-primary">
+                  <span class="btn__content">Primary</span>
+                </button>
+                <button class="btn btn--contained-secondary">
+                  <span class="btn__content">Secondary</span>
+                </button>
+                <button class="btn btn--contained-warning">
+                  <span class="btn__content">warning</span>
+                </button>
+                <button class="btn btn--contained-success">
+                  <span class="btn__content">Success</span>
+                </button>
+                <button class="btn btn--contained-danger">
+                  <span class="btn__content">Danger</span>
+                </button>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+                <img
+                  src="/images/keyboard_arrow_down_black_18dp.svg"
+                  alt=""
+                  class="feed__source-icon"
+                />
+              </div>
+              <div class="feed__code feed__code--hide">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Outlined Buttons</h3>
+            <p class="feed__text">
+              Outlined button are not filled but have a border on them. Use button--outlined-primary class to create a outlined button.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--row">
+                <button class="btn btn--outlined-primary">
+                  <span class="btn__content">Primary</span>
+                </button>
+                <button class="btn btn--outlined-secondary">
+                  <span class="btn__content">Secondary</span>
+                </button>
+                <button class="btn btn--outlined-warning">
+                  <span class="btn__content">warning</span>
+                </button>
+                <button class="btn btn--outlined-success">
+                  <span class="btn__content">Success</span>
+                </button>
+                <button class="btn btn--outlined-danger">
+                  <span class="btn__content">Danger</span>
+                </button>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+                <img
+                  src="/images/keyboard_arrow_down_black_18dp.svg"
+                  alt=""
+                  class="feed__source-icon"
+                />
+              </div>
+              <div class="feed__code feed__code--hide">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Text Buttons</h3>
+            <p class="feed__text">
+              Sometimes you can see a text button. Use class btn--text-primary.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--row">
+                <button class="btn btn--text">
+                  <span class="btn__content">Primary</span>
+                </button>
+                <button class="btn btn--text">
+                  <span class="btn__content">Secondary</span>
+                </button>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+                <img
+                  src="/images/keyboard_arrow_down_black_18dp.svg"
+                  alt=""
+                  class="feed__source-icon"
+                />
+              </div>
+              <div class="feed__code feed__code--hide">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Link Buttons</h3>
+            <p class="feed__text">
+              Link can lead you to a diffrent page while button denotes action. You can style a link as a button using our predefined classes. Always use anchor tags for link button.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--row">
+                <a href="#" class="btn btn--contained-primary btn--center">
+                  <span class="btn__content">Primary</span>
+                </a>
+                <a href="#" class="btn btn--text btn--center">
+                  <span class="btn__content">Secondary</span>
+                </a>
+                <a href="#" class="btn btn--center btn--outlined-danger">
+                  <span class="btn__content">Secondary</span>
+                </a>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+                <img
+                  src="/images/keyboard_arrow_down_black_18dp.svg"
+                  alt=""
+                  class="feed__source-icon"
+                />
+              </div>
+              <div class="feed__code feed__code--hide">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Icon Buttons</h3>
+            <p class="feed__text">
+              Icon button are very common that you can see in ecommerce websites.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--row">
+                <button class="btn--icon btn--center">
+                  <span class="material-icons">delete</span>
+                </button>
+                <button class="btn--icon btn--center">
+                  <span class="material-icons">check</span>
+                </button>
+                <button class="btn--icon btn--center">
+                  <span class="material-icons">shopping_cart</span>
+                </button>
+                <button class="btn--icon btn--center">
+                  <span class="material-icons">clear</span>
+                </button>
+                <button class="btn--icon btn--center">
+                  <span class="material-icons">favorite</span>
+                </button>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+                <img
+                  src="/images/keyboard_arrow_down_black_18dp.svg"
+                  alt=""
+                  class="feed__source-icon"
+                />
+              </div>
+              <div class="feed__code feed__code--hide">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Floating Action Buttons</h3>
+            <p class="feed__text">
+              Normally found in circular shapes with a icon in middle. It perform primary task in the page.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--flex">
+                <button class="btn--floating btn--center">
+                  <span class="material-icons">add</span>
+                </button>
+                <button class="btn--floating btn--center">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="btn--floating btn--center">
+                  <span class="material-icons">expand_less</span>
+                </button>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+                <img
+                  src="/images/keyboard_arrow_down_black_18dp.svg"
+                  alt=""
+                  class="feed__source-icon"
+                />
+              </div>
+              <div class="feed__code feed__code--hide">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2509A%2520primary%2520alert%2520example%2520with%2520a%2520text%2520link%2520%253Ca%2520class%253D%2522link-text%2520link-text-primary%2522%253EText%2520Link%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250A%2509A%2520secondary%2520alert%2520example%21%21%21%21%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520success%2520alert%2520example%253A%2520order%2520placed%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520%250A%2509A%2520danger%2520alert%2520example%253A%2520Are%2520you%2520sure%2520you%2520want%2520to%2520delete%2520the%2520account%2520permanently%253F%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509A%2520warning%2520alert%2520example%253A%2520Fill%2520all%2520the%2520fields%2520before%2520submitting%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
         </section>
     </div>
 </body>

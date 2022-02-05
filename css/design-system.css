@@ -206,7 +206,16 @@ ul {
 a {
     text-decoration: none;
 }
-  
+
+pre,
+code {
+    white-space: pre-line;
+}
+
+code {
+    margin: 0 !important;
+}
+
 /* remove animations for people who've turned them off */
 
 @media (prefers-reduced-motion: reduce) {  

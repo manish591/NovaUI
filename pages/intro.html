@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/comp-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css" integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="surface-one">
   <aside class="sidebar grid" id="sidenav-open">
@@ -222,13 +223,11 @@
                 <h3 class="feed__subtitle">Installation Guide</h3>
                 <p class="feed__text">In order to introduce Nova to your project, Copy the Link given below and paste it in the &lt;head&gt; tag of your html, above all other style sheets.</p>
                 <div class="feed__code">
-                    <code>
-                        <iframe
-                        src="https://carbon.now.sh/embed/3lVYmbAcLQa79JyukDSx"
-                        style="border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                      </iframe>
+                  <pre>
+                    <code class="language-html">
+                      &lt;link rel="stylesheet" href="https://nova.netlify.app/css/components.css"&gt;
                     </code>
+                  </pre>
                 </div>
             </div>
             <div class="space-bottom flow-space-2">
@@ -237,5 +236,8 @@
             </div>
         </section>
     </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

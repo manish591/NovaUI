@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/comp-page.css">
+    <link rel="stylesheet" href="./input.css">
 </head>
 <body class="surface-one">
   <aside class="sidebar grid" id="sidenav-open">
@@ -214,6 +215,144 @@
         </div>
       </section>
         <section class="feed">
+          <div class="flow-space-2 space-bottom">
+            <h1 class="feed__title">Input</h1>
+            <p class="feed__text">Inputs are important part of website interaction. Inputs collects data from the user and then use that data accordingly.</p>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Basic Input Field</h3>
+            <p class="feed__text">
+              This is the basic input field you will see in Nova.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <input type="text" class="form__input">
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Input Field With Placeholder</h3>
+            <p class="feed__text">
+              Placeholder describes what type of data this input field is expecting from the user.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <input type="text" class="form__input" placeholder="Type Something">
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Input Field With Labels</h3>
+            <p class="feed__text">
+              Placeholder describes what type of data this input field is expecting from the user.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <div class="form__group flex">
+                  <label for="form-label-one" class="form__label">What's in your mind?</label>
+                  <input type="text" id="form-label-one" class="form__input" placeholder="Type Something">
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Input Field Varients</h3>
+            <p class="feed__text">
+              Nova provides you with three basic input Varients, outlined, filled and standard. 
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--flex">
+                <div class="form__group form__group--floating">
+                  <input type="text" class="form__input form__input--outlined" id="form-label-two" required>
+                  <label for="form-label-two" class="form__label">Outlined</label>
+                </div>
+                <div class="form__group form__group--floating">
+                  <input type="text" class="form__input form__input--filled" id="form-label-three" required>
+                  <label for="form-label-three" class="form__label">Filled</label>
+                </div>
+                <div class="form__group form__group--floating">
+                  <input type="text" class="form__input form__input--standard" id="form-label-four" required>
+                  <label for="form-label-four" class="form__label form__label--standard">Standard</label>
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Input Form Types and Attributes</h3>
+            <p class="feed__text">
+              There are multiple attributes and forms types you can use.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo gutter-temp">
+                <input type="text" class="form__input" placeholder="Required*" required>
+                <input type="text" class="form__input" placeholder="Disabled" disabled>
+                <input type="password" class="form__input" placeholder="Password" required>
+                <input type="Number" class="form__input" placeholder="Number">
+                <input type="date" class="form__input">
+                <input type="email" class="form__input" placeholder="Email">
+                <div class="form__group">
+                  <input type="text" class="form__input" placeholder="Type Something">
+                  <p class="input-helper">Some helper text</p>
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Validation</h3>
+            <p class="feed__text">
+              These will show error styles.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--columns">
+                <div class="form__group form__group--floating has-error">
+                  <input type="text" class="form__input form__input--outlined" id="form-label-five" required>
+                  <label for="form-label-five" class="form__label">Outlined</label>
+                  <p class="form__helper-text">Incorrect Entry</p>
+                </div>
+                <div class="form__group has-error">
+                  <label for="form-label-six" class="form__label">Password</label>
+                  <input type="password" id="form-label-six" class="form__input">
+                  <p class="form__helper-text">Your Password is Incorrect</p>
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
         </section>
     </div>
 </body>

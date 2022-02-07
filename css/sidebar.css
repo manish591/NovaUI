@@ -1,8 +1,7 @@
 .sidebar {
     gap: var(--spacing-1);
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     block-size: 100vh;
     grid-template-columns: 70% 1fr;

@@ -18,7 +18,7 @@
 .intro__info {
     letter-spacing: 1.2px;
     margin-bottom: 2rem;
-    font-size: var(--fs-500);
+    font-size: calc(var(--fs-400) + 0.15rem);
     margin-top: var(--spacing-7);
     max-inline-size: 80%;
     margin-inline: auto;
@@ -27,7 +27,7 @@
 
 .intro__links {
     display: flex;
-    gap: 2.5vh;
+    gap: var(--spacing-13);
     justify-content: center;
 }
 
@@ -52,4 +52,10 @@
 
 .intro__img-container {
     display: none;
+}
+
+@media (max-width: 299px) {
+    .intro__title {
+        font-size: var(--fs-900-small);
+    }
 }

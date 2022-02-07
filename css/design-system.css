@@ -3,11 +3,11 @@
 /* --------------------- */
 
 * {
-    --brand-color: hsl(210, 100%, 49%);
+    --brand-color: hsl(220, 96%, 48%);
 
-    --brand-hue: 210;
-    --brand-saturation: 100%;
-    --brand-lightness: 46%;
+    --brand-hue: 220;
+    --brand-saturation: 96%;
+    --brand-lightness: 48%;
   
     /* Light colors */
   
@@ -81,7 +81,7 @@
   
     /* Font sizes */
   
-    --fs-900-large: 4rem;
+    --fs-900-large: 3.8rem;
     --fs-900-small: 2.8rem;
     --fs-800: 2rem;
     --fs-700: 1.75rem;

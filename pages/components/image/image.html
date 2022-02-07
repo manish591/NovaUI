@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/comp-page.css">
+    <link rel="stylesheet" href="./image.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="surface-one">
   <aside class="sidebar grid" id="sidenav-open">
@@ -213,8 +219,74 @@
           <h3 class="sidenav__title">Design System</h3>
         </div>
       </section>
+
         <section class="feed">
+          <div class="flow-space-2 space-bottom">
+            <h1 class="feed__title">Images</h1>
+            <p class="feed__text">Images are essential part of web. They need to be responsive so they won't get bigger than their parent container. Use our predefined classes to make images responsive as well as of custom sizes.</p>
+          </div>
+
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Square Images</h3>
+            <p class="feed__text">
+              They are of Square shaped with dimensions equal to 200 x 200.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--flex">
+                <img src="https://images.unsplash.com/photo-1541480601022-2308c0f02487?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2JqZWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="alarm clock" class="square-img">
+                <img src="https://images.unsplash.com/photo-1557180295-76eee20ae8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="telephone" class="square-img">
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Round Images</h3>
+            <p class="feed__text">
+              These are cicular images with a dimension of 200 x 200.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo feed__demo--flex">
+                <img src="https://images.unsplash.com/photo-1589487391730-58f20eb2c308?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vdGJhbGx8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="football" class="round-img">
+                <img src="https://images.unsplash.com/photo-1597733153203-a54d0fbc47de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29va2llc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="cookies" class="round-img">
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Responsive Images</h3>
+            <p class="feed__text">
+              These images will be as big as their parent container to give them responsive nature. As their parent grows and shrink they will also grow and shrink.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <div>
+                  <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGVhZHBob25lc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="headphones one the table" class="responsive-img">
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
         </section>
     </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

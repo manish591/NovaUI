@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/comp-page.css">
+    <link rel="stylesheet" href="./toast.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="surface-one">
   <aside class="sidebar grid" id="sidenav-open">
@@ -118,7 +120,7 @@
         </a></li>
         <li class="nav__item logo">Nova <span>UI</span></li>
       </ul>
-      <ul class="nav__list hide nav__list--box surface-three">
+      <ul class="nav__list hide nav__list--box">
         <li class="nav__item nav__item--pages"><a href="/index.html"
           >Home</a
         ></li>
@@ -214,7 +216,120 @@
         </div>
       </section>
         <section class="feed">
+          <div class="space-bottom flow-space-2">
+            <h1 class="feed__title">Toast</h1>
+            <p class="feed__text">Toast are like a notification. Toast provide user information about what process app is doing and will perform. They appear for short time and dissapear afterwords. You can also call then snackbars.</p>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Basic Toast</h3>
+            <p class="feed__text">
+              This is the basic toast. This dosen't appear like that. For showing purposes we have removed it's position property.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <section class="toast toast--demo">
+                  <p class="toast__message">Can't send photo. Retry in 5 seconds.</p>
+                  <button class="toast__retry-btn">Retry</button>
+                  <span class="material-icons toast__clear-btn md-18">clear</span>
+                </section>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Live Demo</h3>
+            <p class="feed__text">
+              You can see live demo by clicking the button below.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <button class="show-toast">Live Demo</button>
+
+                <section class="toast toast--baseline toast--hide">
+                  <p class="toast__message">Can't send photo. Retry in 5 seconds.</p>
+                  <button class="toast__retry-btn">Retry</button>
+                  <span class="material-icons toast__clear-btn md-18">clear</span>
+                </section>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Positioned Toast</h3>
+            <p class="feed__text">
+              You can change where your toast appear in the view using custom classes.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo toast--flex">
+                <button class="show-toast">Bottom Center</button>
+
+                <section class="toast toast--baseline toast--hide">
+                  <p class="toast__message">Can't send photo. Retry in 5 seconds.</p>
+                  <button class="toast__retry-btn">Retry</button>
+                  <span class="material-icons toast__clear-btn md-18">clear</span>
+                </section>
+
+                <button class="show-toast">Bottom Left</button>
+
+                <section class="toast toast--leading toast--hide">
+                  <p class="toast__message">Can't send photo. Retry in 5 seconds.</p>
+                  <button class="toast__retry-btn">Retry</button>
+                  <span class="material-icons toast__clear-btn md-18">clear</span>
+                </section>
+
+                <button class="show-toast">Bottom Right</button>
+
+                <section class="toast toast--right toast--hide">
+                  <p class="toast__message">Can't send photo. Retry in 5 seconds.</p>
+                  <button class="toast__retry-btn">Retry</button>
+                  <span class="material-icons toast__clear-btn md-18">clear</span>
+                </section>
+
+                <button class="show-toast">Top Left</button>
+
+                <section class="toast toast--top-left toast--hide">
+                  <p class="toast__message">Can't send photo. Retry in 5 seconds.</p>
+                  <button class="toast__retry-btn">Retry</button>
+                  <span class="material-icons toast__clear-btn md-18">clear</span>
+                </section>
+
+                <button class="show-toast">Top Center</button>
+
+                <section class="toast toast--top-center toast--hide">
+                  <p class="toast__message">Can't send photo. Retry in 5 seconds.</p>
+                  <button class="toast__retry-btn">Retry</button>
+                  <span class="material-icons toast__clear-btn md-18">clear</span>
+                </section>
+
+                <button class="show-toast">Top Right</button>
+
+                <section class="toast toast--top-right toast--hide">
+                  <p class="toast__message">Can't send photo. Retry in 5 seconds.</p>
+                  <button class="toast__retry-btn">Retry</button>
+                  <span class="material-icons toast__clear-btn md-18">clear</span>
+                </section>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
         </section>
     </div>
+
+    <script src="./toast.js"></script>
 </body>
 </html>

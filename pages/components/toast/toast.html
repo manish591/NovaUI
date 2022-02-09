@@ -328,18 +328,37 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Toast Animations</h3>
+            <h3 class="feed__subtitle">Customized Toast</h3>
             <p class="feed__text">
-              You can add animation to your toast using these classes.
+              You can customize toast like success, danger etc.
             </p>
             <div class="feed__component-display">
-              <section class="feed__demo">
-                <button class="show-toast">Live Demo</button>
+              <section class="feed__demo toast--flex">
+                <button class="show-toast">Show success Toast</button>
 
-                <section class="toast toast--baseline toast--hide">
-                  <p class="toast__message">Can't send photo. Retry in 5 seconds.</p>
-                  <button class="toast__retry-btn">Retry</button>
-                  <span class="material-icons toast__clear-btn md-18">clear</span>
+                <section class="toast toast--baseline toast--hide toast--success">
+                  <div class="align-toast">
+                    <span class="material-icons toast__clear-btn">check</span>
+                    <p class="toast__message">This is success Toast.</p>
+                  </div>
+                </section>
+
+                <button class="show-toast">Show danger Toast</button>
+
+                <section class="toast toast--baseline toast--hide toast--danger">
+                  <div class="align-toast">
+                    <span class="material-icons toast__clear-btn">error</span>
+                    <p class="toast__message">This is danger Toast.</p>
+                  </div>
+                </section>
+
+                <button class="show-toast">Show warning Toast</button>
+
+                <section class="toast toast--baseline toast--hide toast--warning">
+                  <div class="align-toast">
+                    <span class="material-icons toast__clear-btn">warning</span>
+                    <p class="toast__message">This is warning Toast.</p>
+                  </div>
                 </section>
               </section>
               <div class="feed__source-display">

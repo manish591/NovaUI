@@ -74,6 +74,18 @@
     right: 10px;
 }
 
+.toast--success {
+    background-color: var(--clr-success);
+}
+
+.toast--danger {
+    background-color: var(--clr-danger);
+}
+
+.toast--warning {
+    background-color: var(--clr-warning);
+}
+
 .toast__message {
     font-size: .8rem;
 }
@@ -108,6 +120,12 @@
 
 .fade-animation {
     animation: fade 300ms ease-in-out;
+}
+
+.align-toast {
+    display: flex;
+    gap: var(--spacing-5);
+    align-items: center;
 }
 
 @keyframes fade {

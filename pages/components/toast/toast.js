@@ -10,6 +10,7 @@ const showToastInView = e => {
     targetToast.classList.remove('toast--hide');
     hideToastAfterThreeSec(targetToast);
     targetToast.classList.add('fade-animation');
+
 }
 
 const hideToastAfterThreeSec = element => {

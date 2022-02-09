@@ -29,13 +29,23 @@
 }
 
 .nova-rating {
+    display: flex;
     position: relative;
     gap: var(--spacing-6);
+    flex-direction: row-reverse;
+    width: min-content;
 }
 
 svg {
     stroke: grey;
     stroke-width: 5px;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
+}
+
+.nova-rating > input:checked ~ label > svg,
+.nova-rating > label:hover > svg,
+.nova-rating > label:hover ~ label > svg {
+    fill: gold;
+    stroke: none;
 }

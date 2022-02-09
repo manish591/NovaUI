@@ -1,11 +1,13 @@
 const showModal = document.querySelectorAll('.show-modal');
 const clearModalBtn = document.querySelectorAll('.dialog__clear');
+const body = document.querySelector('body');
 
 
 const showModalInView = e => {
     let target = e.target;
     let targetModal = target.nextElementSibling;
     targetModal.classList.remove('dialog--hide');
+    targetModal.classList.add('scale-dialog');
 }
 
 const hideModalInView = e => {

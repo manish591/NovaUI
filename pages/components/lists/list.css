@@ -1,0 +1,31 @@
+.lists {
+    background-color: var(--surface3);
+    padding-block: .6rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9);
+}
+
+.lists__item {
+    padding-inline: 1rem
+}
+
+.lists__heading {
+    border-block-end: 1px solid var(--surface4);
+    padding-block: 1rem;
+}
+
+.lists--stacked {
+    gap: var(--spacing-4);
+    background: none;
+}
+
+.lists__item--stacked {
+    background-color: var(--surface4);
+    padding-block: 1rem;
+}
+
+.lists--inline {
+    flex-direction: row;
+    align-items: center;
+}

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/comp-page.css">
+    <link rel="stylesheet" href="./modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="surface-one">
   <aside class="sidebar grid" id="sidenav-open">
@@ -118,7 +120,7 @@
         </a></li>
         <li class="nav__item logo">Nova <span>UI</span></li>
       </ul>
-      <ul class="nav__list hide nav__list--box surface-three">
+      <ul class="nav__list hide nav__list--box">
         <li class="nav__item nav__item--pages"><a href="/index.html"
           >Home</a
         ></li>
@@ -214,7 +216,161 @@
         </div>
       </section>
         <section class="feed">
+          <div class="space-bottom flow-space-2">
+            <h1 class="feed__title">Modal</h1>
+            <p class="feed__text">Modal are draws over everything on the web to give user quick message. You can close then using clear button.</p>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Example For Modal</h3>
+            <p class="feed__text">
+              To show modal example we have removed position properties from this component.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <section class="dialog dialog--demo">
+                  <div class="dialog__content">
+                    <span class="material-icons dialog__clear">clear</span>
+                    <div class="dialog__info wrapper">
+                        <h3 class="dialog__header">Dialog Header</h3>
+                        <p class="dialog__description">Dialog body text</p>
+                    </div>
+                    <div class="dialog__cta wrapper">
+                        <button class="dialog__action-btn">Action 1</button>
+                        <button class="dialog__action-btn">Action 2</button>
+                    </div>
+                  </div>
+                </section>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Live Demo</h3>
+            <p class="feed__text">
+              You can see here how modal will look on a real website by clicking on live demo button.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <button class="show-modal">Live Demo</button>
+
+                <section class="dialog dialog--alert dialog--hide">
+                  <div class="dialog__content">
+                    <span class="material-icons dialog__clear">clear</span>
+                    <div class="dialog__info wrapper">
+                        <h3 class="dialog__header">Dialog Header</h3>
+                        <p class="dialog__description">Dialog body text</p>
+                    </div>
+                    <div class="dialog__cta wrapper">
+                        <button class="dialog__action-btn">Action 1</button>
+                        <button class="dialog__action-btn">Action 2</button>
+                    </div>
+                  </div>
+                </section>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Simple Modal</h3>
+            <p class="feed__text">
+              This is one of simple modal varients you can use.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <button class="show-modal">Simple Modal</button>
+
+                <section class="dialog dialog--simple dialog--hide">
+                  <div class="dialog__content">
+                    <span class="material-icons dialog__clear">clear</span>
+                    <div class="dialog__info wrapper">
+                      <h3 class="dialog__header">Dialog Header</h3>
+                    </div>
+                    <div class="dialog__options wrapper-2">
+                        <div class="dialog__item">
+                            <span class="material-icons dialog__avator md-size">account_circle</span>
+                            <p class="dialog__item-name">Item 1</p>
+                        </div>
+                        <div class="dialog__item">
+                            <span class="material-icons dialog__avator md-size">account_circle</span>
+                            <p class="dialog__item-name">Item 2</p>
+                        </div>
+                        <div class="dialog__item">
+                            <span class="material-icons dialog__avator md-size">account_circle</span>
+                            <p class="dialog__item-name">Item 3</p>
+                        </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Confirmation Modal</h3>
+            <p class="feed__text">
+              This is one of simple modal varients you can use.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <button class="show-modal">Confirmation Modal</button>
+
+                <section class="dialog dialog--confirmation dialog--hide">
+                  <div class="dialog__content">
+                    <span class="material-icons dialog__clear">clear</span>
+                    <div class="dialog__info dialog__info--confirm">
+                      <h3 class="dialog__header dialog__header--confirm">Dialog Header</h3>
+                    </div>
+                    <form class="dialog__form">
+                        <div class="dialog__input-area dialog__input-area--flex">
+                            <input type="radio" name="item" id="item1" class="dialog__input">
+                            <label for="item1">Item 1</label>
+                        </div>
+                        <div class="dialog__input-area dialog__input-area--flex">
+                            <input type="radio" name="item" id="item2" class="dialog__input">
+                            <label for="item2">Item 2</label>
+                        </div>
+                        <div class="dialog__input-area dialog__input-area--flex">
+                            <input type="radio" name="item" id="item3" class="dialog__input">
+                            <label for="item3">Item 3</label>
+                        </div>
+                        <div class="dialog__input-area dialog__input-area--flex">
+                            <input type="radio" name="item" id="item4" class="dialog__input">
+                            <label for="item4">Item 4</label>
+                        </div>
+                    </form>
+                    <div class="dialog__cta dialog__cta--confirm">
+                        <button class="dialog__action-btn dialog__action-btn--gap-top">Action 1</button>
+                        <button class="dialog__action-btn dialog__action-btn--gap-top">Action 2</button>
+                    </div>
+                  </div>
+                </section>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
         </section>
     </div>
+
+    <script src="./modal.js"></script>
 </body>
 </html>

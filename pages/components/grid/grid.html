@@ -226,9 +226,9 @@
             </p>
             <div class="feed__component-display">
               <section class="feed__demo">
-                <div class="layout layout--gap layout--two-item">
-                  <section class="layout__item item-1">Item One</section>
-                  <section class="layout__item item-2">Item Two</section>
+                <div class="layout grid--gap grid--two-cols">
+                  <section class="grid__item item-1">Item One</section>
+                  <section class="grid__item item-2">Item Two</section>
                 </div>
               </section>
               <div class="feed__source-display">
@@ -245,10 +245,57 @@
             </p>
             <div class="feed__component-display">
               <section class="feed__demo">
-                <div class="layout layout--gap layout--three-item">
-                  <section class="layout__item item-1">Item One</section>
-                  <section class="layout__item item-2">Item Two</section>
-                  <section class="layout__item item-3">Item Three</section>
+                <div class="layout grid--gap grid--three-cols">
+                  <section class="grid__item item-1">Item One</section>
+                  <section class="grid__item item-2">Item Two</section>
+                  <section class="grid__item item-3">Item Three</section>
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Layout items using Autofill</h3>
+            <p class="feed__text">
+              This is will layout as many item that it can fill inside the container. This is also responsive.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <div class="layout grid--gap grid-auto-fill">
+                  <section class="grid__item item-1">Item One</section>
+                  <section class="grid__item item-2">Item Two</section>
+                  <section class="grid__item item-3">Item Three</section>
+                  <section class="grid__item item-3">Item Four</section>
+                  <section class="grid__item item-3">Item Five</section>
+                  <section class="grid__item item-3">Item Six</section>
+                  <section class="grid__item item-3">Item Seven</section>
+                  <section class="grid__item item-3">Item Eight</section>
+                </div>
+              </section>
+              <div class="feed__source-display">
+                <button class="feed__code-source">Source</button>
+              </div>
+              <div class="feed__code">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flow-space-2 space-bottom">
+            <h3 class="feed__subtitle">Span items in columns and rows</h3>
+            <p class="feed__text">
+              You can use our built in css variables to span items.
+            </p>
+            <div class="feed__component-display">
+              <section class="feed__demo">
+                <div class="layout grid--gap">
+                  <section class="grid__item item-1 grid-span-2">Item One</section>
+                  <section class="grid__item item-2 grid-span-4">Item Two</section>
+                  <section class="grid__item item-3 grid-span-6">Item Three</section>
                 </div>
               </section>
               <div class="feed__source-display">

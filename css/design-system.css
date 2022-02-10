@@ -208,15 +208,6 @@ a {
     color: unset;
 }
 
-pre,
-code {
-    white-space: pre-line;
-}
-
-code {
-    margin: 0 !important;
-}
-
 /* remove animations for people who've turned them off */
 
 @media (prefers-reduced-motion: reduce) {  
@@ -347,4 +338,11 @@ code {
 .font-size-700,
 .font-size-600 {
     line-height: 1.1;
-}  
+}
+
+.text-mark {
+    background-color: var(--surface4);
+    color: var(--text2);
+    padding: .2rem .3rem;
+    border-radius: 4px;
+}

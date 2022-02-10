@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/sidebar.css" />
     <link rel="stylesheet" href="/css/comp-page.css" />
+    <link rel="stylesheet" href="/pages/components/avatar/avatar.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -44,7 +45,7 @@
               href="/pages/components/alert/alert.html"
               >Alert</a
             ></li>
-            <li class="sidebar__list-item"><a
+            <li class="sidebar__list-item links--selected"><a
               href="/pages/components/badge/badge.html"
               >Badge</li></a
             ></li>
@@ -159,7 +160,7 @@
     </header>
     <div class="component component--grid">
       <section class="sidenav flow-space">
-        <div class="sidenav__get-started">
+        <div class="sidenav__get-started sidenav--line-bottom">
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
@@ -169,14 +170,14 @@
             <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
-        <div class="sidenav__components">
+        <div class="sidenav__components sidenav--line-bottom">
           <h3 class="sidenav__title">Components</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/components/avatar/avatar.html">Avatar</a></li>
             <li class="sidenav__items"><a href="/pages/components/alert/alert.html"
               >Alert</a
             ></li>
-            <li class="sidenav__items"><a href="/pages/components/badge/badge.html"
+            <li class="sidenav__items links--selected"><a href="/pages/components/badge/badge.html"
               >Badge</a
             ></li>
             <li class="sidenav__items"><a href="/pages/components/button/button.html"
@@ -217,7 +218,7 @@
             ></li>
           </ul>
         </div>
-        <div class="sidenav__design-system">
+        <div class="sidenav__design-system sidenav--line-bottom">
           <h3 class="sidenav__title">Design System</h3>
         </div>
       </section>
@@ -225,31 +226,31 @@
         <div class="space-bottom flow-space-2">
           <h1 class="feed__title">Badges</h1>
           <p class="feed__text">
-            Badges are used to draw user attention on chnage. That can be a
-            change in status and count.
+            Badges are used to draw user attention on change. That can be a
+            change in status and count. It can be positioned at bottom-right, top-right etc.
           </p>
         </div>
         <div class="flow-space space-bottom">
           <h3 class="feed__subtitle">Icon Badges</h3>
           <p class="feed__text">
-            Icon badges are very common that we can see in e-commerce website.
+            Icon badges are very common. Use classes <span class="text-mark">.badge</span> to create such badges. Use varients classes <span class="text-mark">.badge--primary</span> on badge <span class="text-mark">p tag</span> to give them diffrent colors.
           </p>
           <div class="feed__component-display">
             <section class="feed__demo feed__demo--flex">
               <section class="badge">
                 <span class="material-icons md-24">favorite_border</span>
-                <p class="badge__info badge__info--standard">2</p>
+                <p class="badge__info badge__info--standard badge__info--primary">2</p>
+              </section>
+              <section class="badge">
+                <span class="material-icons md-24">favorite_border</span>
+                <p class="badge__info badge__info--standard badge__info--danger">2</p>
               </section>
             </section>
             <div class="feed__source-display">
               <button class="feed__code-source">Source</button>
-              <img
-                src="/images/keyboard_arrow_down_black_18dp.svg"
-                alt=""
-                class="feed__source-icon"
-              />
+              <span class="material-icons icons-small">expand_more</span>
             </div>
-            <div class="feed__code feed__code--hide">
+            <div class="feed__code">
               
             </div>
           </div>
@@ -257,9 +258,7 @@
         <div class="flow-space space-bottom">
           <h3 class="feed__subtitle">Button Badges</h3>
           <p class="feed__text">
-            One of the most common thing you can see on the web is badges with
-            button. They are mostly attached in the top right corner of the
-            button.
+            Button badges can be created by enclosing button in our badge container. Then use our utility classes for badges shown below.
           </p>
           <div class="feed__component-display">
             <section class="feed__demo feed__demo--flex">
@@ -268,19 +267,15 @@
                 <p class="badge__info badge__info--btn-right">99+</p>
               </section>
               <section class="badge">
-                  <button class="badge__btn">Hide</button>
+                  <button class="badge__btn">Show</button>
                   <p class="badge__info badge__info--btn-left">2</p>
               </section>
             </section>
             <div class="feed__source-display">
               <button class="feed__code-source">Source</button>
-              <img
-                src="/images/keyboard_arrow_down_black_18dp.svg"
-                alt=""
-                class="feed__source-icon"
-              />
+              <span class="material-icons icons-small">expand_more</span>
             </div>
-            <div class="feed__code feed__code--hide">
+            <div class="feed__code">
               
             </div>
           </div>
@@ -288,7 +283,7 @@
         <div class="flow-space space-bottom">
           <h3 class="feed__subtitle">Badges with texts</h3>
           <p class="feed__text">
-            Texts over badges is also available in our component library.
+            Text badges are used by enclosing a text inside our badge container. Then use utility class <span class="text-mark">.badge__info--text-right</span> to position it accordingly.
           </p>
           <div class="feed__component-display">
             <section class="feed__demo feed__demo--flex">
@@ -303,13 +298,50 @@
             </section>
             <div class="feed__source-display">
               <button class="feed__code-source">Source</button>
-              <img
-                src="/images/keyboard_arrow_down_black_18dp.svg"
-                alt=""
-                class="feed__source-icon"
-              />
+              <span class="material-icons icons-small">expand_more</span>
             </div>
-            <div class="feed__code feed__code--hide">
+            <div class="feed__code">
+              
+            </div>
+          </div>
+        </div>
+        <div class="flow-space space-bottom">
+          <h3 class="feed__subtitle">Profile Badges</h3>
+          <p class="feed__text">
+            Profile badges are very common. They used to represent user current status. For online status use class <span class="text-mark">.badge__info--online</span>, for offline status use class <span class="text-mark">.badge__info--offline</span> etc.
+          </p>
+          <div class="feed__component-display">
+            <section class="feed__demo feed__demo--flex">
+              <div class="badge">
+                <img
+                src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                alt=""
+                class="avatar"
+               />
+               <p class="badge__info badge__info--profile badge__info--online"></p>
+              </div>
+              <div class="badge">
+                <img
+                src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                alt=""
+                class="avatar"
+               />
+               <p class="badge__info badge__info--profile badge__info--offline"></p>
+              </div>
+              <div class="badge">
+                <img
+                src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                alt=""
+                class="avatar"
+               />
+               <p class="badge__info badge__info--profile badge__info--dnd"></p>
+              </div>
+            </section>
+            <div class="feed__source-display">
+              <button class="feed__code-source">Source</button>
+              <span class="material-icons icons-small">expand_more</span>
+            </div>
+            <div class="feed__code">
               
             </div>
           </div>

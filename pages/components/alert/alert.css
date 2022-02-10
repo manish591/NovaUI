@@ -30,6 +30,7 @@
 .alert__fancy {
     border: 1px solid var(--surface4);
     color: var(--text1);
+    background-color: var(--surface4);
 }
 
 .alert__fancy--primary {

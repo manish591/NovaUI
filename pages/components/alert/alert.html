@@ -17,7 +17,6 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Nova:Alert</title>
 </head>
 <body class="surface-one">
@@ -38,7 +37,7 @@
         <ul class="flex sidebar__list">
           <li><p class="sidebar__list-category">Components</p></li>
           <li class="sidebar__list-item"><a href="/pages/components/avatar/avatar.html">Avatar</a></li>
-          <li class="sidebar__list-item"><a
+          <li class="sidebar__list-item links--selected"><a
             href="/pages/components/alert/alert.html"
             >Alert</a
           ></li>
@@ -157,7 +156,7 @@
   </header>
     <div class="component component--grid">
       <section class="sidenav flow-space">
-        <div class="sidenav__get-started">
+        <div class="sidenav__get-started sidenav--line-bottom">
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
@@ -167,11 +166,11 @@
             <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
-        <div class="sidenav__components">
+        <div class="sidenav__components sidenav--line-bottom">
           <h3 class="sidenav__title">Components</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/components/avatar/avatar.html">Avatar</a></li>
-            <li class="sidenav__items"><a href="/pages/components/alert/alert.html"
+            <li class="sidenav__items links--selected"><a href="/pages/components/alert/alert.html"
               >Alert</a
             ></li>
             <li class="sidenav__items"><a href="/pages/components/badge/badge.html"
@@ -215,19 +214,19 @@
             ></li>
           </ul>
         </div>
-        <div class="sidenav__design-system">
+        <div class="sidenav__design-system sidenav--line-bottom">
           <h3 class="sidenav__title">Design System</h3>
         </div>
       </section>
         <section class="feed">
           <div class="space-bottom flow-space-2">
             <h1 class="feed__title">Alert</h1>
-            <p class="feed__text">An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.</p>
+            <p class="feed__text">An alert displays a short, valuable feedback to the user's action without interrupting the user's tasks.</p>
           </div>
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Simple Alert</h3>
             <p class="feed__text">
-              These are simple alert can be created using class alert and for varients use alert primary, danger etc.
+              Simple alerts can be created using class name <span class="text-mark">.alert</span> along with alert varient name like <span class="text-mark">.alert--primary</span>, <span class="text-mark">.alert--danger</span> etc.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--columns">
@@ -249,43 +248,17 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
-                <img
-                  src="/images/keyboard_arrow_down_black_18dp.svg"
-                  alt=""
-                  class="feed__source-icon"
-                />
+                <span class="material-icons icons-small">expand_more</span>
               </div>
-              <div class="feed__code feed__code--hide">
-                <pre>
-                  <code class="language-html">
-                      &lt;div class="alert alert--primary"&gt;
-                        &lt;p&gt;This Is A Primary Alert - Check It Now!&lt;/p&gt;
-                      &lt;/div&gt;
-
-                      &lt;div class="alert alert--secondary"&gt;
-                        &lt;p>This Is A Primary Alert - Check It Now!&lt;/p&gt;
-                      &lt;/div&gt;
-
-                      &lt;div class="alert alert--success"&gt;
-                        &lt;p&gt;This Is A Primary Alert - Check It Now!&lt;/p&gt;
-                      &lt;/div&gt;
-
-                      &lt;div class="alert alert--danger"&gt;
-                        &lt;p&gt;This Is A Primary Alert - Check It Now!&lt;/p>
-                      &lt;/div&gt;
-
-                      &lt;div class="alert alert--warning"&gt;
-                        &lt;p&gt;This Is A Primary Alert - Check It Now!&lt;/p&gt;
-                      &lt;/div&gt;
-                  </code>
-                </pre>
+              <div class="feed__code">
+                
               </div>
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Fancy Alert</h3>
             <p class="feed__text">
-              They are extension of simple alert. If you want better looking alerts.
+              These alert messages look diffrent than simple alerts. To create them use class <span class="text-mark">.alert__fancy</span> along with varients name.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--columns">
@@ -307,11 +280,7 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
-                <img
-                  src="/images/keyboard_arrow_down_black_18dp.svg"
-                  alt=""
-                  class="feed__source-icon"
-                />
+                <span class="material-icons icons-small">expand_more</span>
               </div>
               <div class="feed__code feed__code--hide">
                 
@@ -321,7 +290,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Alerts With Icon</h3>
             <p class="feed__text">
-              If you like icons with alert import material icon link and use pre defined classes.
+              You can also use icons in alert messages. You have to use our alert utility <span class="text-mark">.alert--flex</span> while using them.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--columns">
@@ -363,13 +332,9 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
-                <img
-                  src="/images/keyboard_arrow_down_black_18dp.svg"
-                  alt=""
-                  class="feed__source-icon"
-                />
+                <span class="material-icons icons-small">expand_more</span>
               </div>
-              <div class="feed__code feed__code--hide">
+              <div class="feed__code">
                 
               </div>
             </div>
@@ -377,7 +342,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Dismissble Alert</h3>
             <p class="feed__text">
-              With javascript you can also add dismissable alert.
+              Dismissable alert requires you to add a additional class <span class="text-mark">.alert-dismissable</span>. User can remove the these alert anytime. Include our javscript file to make it work.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--columns">
@@ -388,13 +353,9 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
-                <img
-                  src="/images/keyboard_arrow_down_black_18dp.svg"
-                  alt=""
-                  class="feed__source-icon"
-                />
+                <span class="material-icons icons-small">expand_more</span>
               </div>
-              <div class="feed__code feed__code--hide">
+              <div class="feed__code">
                 
               </div>
             </div>
@@ -402,7 +363,6 @@
         </section>
     </div>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script src="./alert.js"></script>
 </body>
 </html>

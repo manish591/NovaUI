@@ -53,7 +53,7 @@
     padding: var(--spacing-6) var(--spacing-5);
 }
 
-.sidenav__line-bottom {
+.sidenav--line-bottom {
     border-block-end: 1px solid var(--surface4);
     padding-block-end: .8rem;
 }

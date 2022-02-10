@@ -25,7 +25,28 @@
     padding-block: 1rem;
 }
 
+.lists--notification {
+    inline-size: min(90%, 500px);
+}
+
 .lists--inline {
     flex-direction: row;
     align-items: center;
+}
+
+.lists__group {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-10);
+}
+
+.lists__img {
+    inline-size: 45px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.lists__group--time {
+    margin-inline-start: auto;
 }

@@ -1,0 +1,51 @@
+.rating {
+    gap: var(--spacing-4);
+}
+
+.rating__item {
+    cursor: pointer;
+}
+
+.rating__star {
+    color: rgba(128, 128, 128, 0.685);
+}
+
+.star-1 .star-1 span,
+.star-2 .star-1 span,
+.star-2 .star-2 span,
+.star-3 .star-1 span,
+.star-3 .star-2 span,
+.star-3 .star-3 span,
+.star-4 .star-1 span,
+.star-4 .star-2 span,
+.star-4 .star-3 span,
+.star-4 .star-4 span,
+.star-5 .star-1 span,
+.star-5 .star-2 span,
+.star-5 .star-3 span,
+.star-5 .star-4 span,
+.star-5 .star-5 span {
+    color: gold;
+}
+
+.nova-rating {
+    display: flex;
+    position: relative;
+    gap: var(--spacing-6);
+    flex-direction: row-reverse;
+    width: min-content;
+}
+
+svg {
+    stroke: grey;
+    stroke-width: 5px;
+    width: 22px;
+    height: 22px;
+}
+
+.nova-rating > input:checked ~ label > svg,
+.nova-rating > label:hover > svg,
+.nova-rating > label:hover ~ label > svg {
+    fill: gold;
+    stroke: none;
+}

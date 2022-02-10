@@ -1,0 +1,149 @@
+.md-18 {
+    font-size: 12px !important;
+    width: 18px !important;
+    aspect-ratio: 1 !important;
+    color: hsl( var(--clr-light) ) !important;
+    background-color: hsl( var(--clr-dark) / 30%) !important;
+    display: grid !important;
+    place-items: center !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.md-18:hover {
+    background-color: hsl( var(--clr-dark)) !important;
+}
+
+.toast-container {
+    width: min(90%, 700px);
+    margin: 10vh auto;
+}
+
+.toast {
+    width: min(95%, 350px);
+    background-color: #2e2e2e;
+    color: var(--light-clr);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem .5rem;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 20;
+}
+
+.toast--demo {
+    position: static;
+}
+
+.toast--hide {
+    display: none;
+}
+
+.toast--baseline {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.toast--leading {
+    left: 10px;
+    bottom: 20px;
+}
+
+.toast--right {
+    bottom: 20px;
+    right: 10px;
+}
+
+.toast--top-left {
+    top: 20px;
+    left: 10px;
+}
+
+.toast--top-center {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.toast--top-right {
+    top: 20px;
+    right: 10px;
+}
+
+.toast--success {
+    background-color: var(--clr-success);
+}
+
+.toast--danger {
+    background-color: var(--clr-danger);
+}
+
+.toast--warning {
+    background-color: var(--clr-warning);
+}
+
+.toast__message {
+    font-size: .8rem;
+}
+
+.toast__retry-btn {
+    border: none;
+    background: none;
+    color: var(--brand);
+    font-size: 1rem;
+}
+
+.cast-toast {
+    padding-inline: 1.3rem;
+    padding-block: .5rem;
+}
+
+.show-toast {
+    block-size: 48px;
+    padding-inline: 24px;
+    border: none;
+    color: var(--light-clr);
+    background-color: var(--brand);
+    border-radius: 6px;
+}
+
+.toast--flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.fade-animation {
+    animation: fade 300ms ease-in-out;
+}
+
+.align-toast {
+    display: flex;
+    gap: var(--spacing-5);
+    align-items: center;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 78%;
+    }
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 65%;
+    }
+}

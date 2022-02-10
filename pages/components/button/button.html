@@ -45,7 +45,7 @@
             href="/pages/components/badge/badge.html"
             >Badge</li></a
           ></li>
-          <li class="sidebar__list-item"><a
+          <li class="sidebar__list-item links--selected"><a
             href="/pages/components/button/button.html"
             >Button</a
           ></li>
@@ -156,7 +156,7 @@
   </header>
     <div class="component component--grid">
       <section class="sidenav flow-space">
-        <div class="sidenav__get-started">
+        <div class="sidenav__get-started sidenav--line-bottom">
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
@@ -166,7 +166,7 @@
             <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
-        <div class="sidenav__components">
+        <div class="sidenav__components sidenav--line-bottom">
           <h3 class="sidenav__title">Components</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/components/avatar/avatar.html">Avatar</a></li>
@@ -176,7 +176,7 @@
             <li class="sidenav__items"><a href="/pages/components/badge/badge.html"
               >Badge</a
             ></li>
-            <li class="sidenav__items"><a href="/pages/components/button/button.html"
+            <li class="sidenav__items links--selected"><a href="/pages/components/button/button.html"
               >Button</a
             ></li>
             <li class="sidenav__items"><a href="/pages/components/card/card.html"
@@ -214,19 +214,19 @@
             ></li>
           </ul>
         </div>
-        <div class="sidenav__design-system">
+        <div class="sidenav__design-system sidenav--line-bottom">
           <h3 class="sidenav__title">Design System</h3>
         </div>
       </section>
         <section class="feed">
           <div class="space-bottom flow-space-2">
             <h1 class="feed__title">Button</h1>
-            <p class="feed__text">Buttons are everywhere on the web. They represent actions that user can take. We can see buttons throughout the we like in cards, in modals etc.</p>
+            <p class="feed__text">Buttons are everywhere on the web. They represent actions that user can take. Use Nova's custom button styles to use them in forms, modal, etc.</p>
           </div>
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Contained Buttons</h3>
             <p class="feed__text">
-              This is the most basic type of button you can see on the web. Use the class button ans button--contained.
+              They are filled buttons and mostly useful for primary action in your web page. Use our predefined classes <span class="text-mark">.btn</span> along with varients classes like <span class="text-mark">.btn--contained-primary</span> to create such buttons.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--row">
@@ -248,13 +248,9 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
-                <img
-                  src="/images/keyboard_arrow_down_black_18dp.svg"
-                  alt=""
-                  class="feed__source-icon"
-                />
+                <span class="material-icons icons-small">expand_more</span>
               </div>
-              <div class="feed__code feed__code--hide">
+              <div class="feed__code">
                 
               </div>
             </div>
@@ -262,7 +258,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Outlined Buttons</h3>
             <p class="feed__text">
-              Outlined button are not filled but have a border on them. Use button--outlined-primary class to create a outlined button.
+              In case you don't need primary action button everywhere then, you can use outlined button for a secondary action in your web page. Replace varient class <span class="text-mark">.btn--contained-primary</span> with class <span class="text-mark">.btn--outlined-primary</span> for creating outlined buttons.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--row">
@@ -284,13 +280,9 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
-                <img
-                  src="/images/keyboard_arrow_down_black_18dp.svg"
-                  alt=""
-                  class="feed__source-icon"
-                />
+                <span class="material-icons icons-small">expand_more</span>
               </div>
-              <div class="feed__code feed__code--hide">
+              <div class="feed__code">
                 
               </div>
             </div>
@@ -298,7 +290,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Text Buttons</h3>
             <p class="feed__text">
-              Sometimes you can see a text button. Use class btn--text-primary.
+              Text buttons can be created using varient class <span class="text-mark">.btn--text</span>
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--row">
@@ -311,13 +303,9 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
-                <img
-                  src="/images/keyboard_arrow_down_black_18dp.svg"
-                  alt=""
-                  class="feed__source-icon"
-                />
+                <span class="material-icons icons-small">expand_more</span>
               </div>
-              <div class="feed__code feed__code--hide">
+              <div class="feed__code">
                 
               </div>
             </div>
@@ -325,7 +313,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Link Buttons</h3>
             <p class="feed__text">
-              Link can lead you to a diffrent page while button denotes action. You can style a link as a button using our predefined classes. Always use anchor tags for link button.
+              Link can lead you to a diffrent page while button denotes action. You can style a link as a button using our predefined classes.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--row">
@@ -341,13 +329,9 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
-                <img
-                  src="/images/keyboard_arrow_down_black_18dp.svg"
-                  alt=""
-                  class="feed__source-icon"
-                />
+                <span class="material-icons icons-small">expand_more</span>
               </div>
-              <div class="feed__code feed__code--hide">
+              <div class="feed__code">
                 
               </div>
             </div>
@@ -355,7 +339,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Icon Buttons</h3>
             <p class="feed__text">
-              Icon button are very common that you can see in ecommerce websites.
+              Create these cool looking icon btn using class <span class="text-mark">.btn--icon</span>.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--row">
@@ -377,13 +361,9 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
-                <img
-                  src="/images/keyboard_arrow_down_black_18dp.svg"
-                  alt=""
-                  class="feed__source-icon"
-                />
+                <span class="material-icons icons-small">expand_more</span>
               </div>
-              <div class="feed__code feed__code--hide">
+              <div class="feed__code">
                 
               </div>
             </div>
@@ -391,7 +371,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Floating Action Buttons</h3>
             <p class="feed__text">
-              Normally found in circular shapes with a icon in middle. It perform primary task in the page.
+              Floating action buttons are diffrent than usual buttons. They are used for primary action user can take. Use our varient class <span class="text-mark">.btn--floating</span> to create such buttons.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--flex">
@@ -407,13 +387,9 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
-                <img
-                  src="/images/keyboard_arrow_down_black_18dp.svg"
-                  alt=""
-                  class="feed__source-icon"
-                />
+                <span class="material-icons icons-small">expand_more</span>
               </div>
-              <div class="feed__code feed__code--hide">
+              <div class="feed__code">
                 
               </div>
             </div>

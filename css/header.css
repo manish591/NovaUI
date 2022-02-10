@@ -75,12 +75,14 @@ header {
     inset-block-end: 0;
     inset-inline-start: 0;
     background-color: var(--brand);
-    transform: translateX(-100%);
+    transform: scaleX(0);
     transition: transform 200ms ease-in-out;
+    transform-origin: right;
 }
 
 .nav__item--pages:hover::after {
-    transform: translateX(0%);
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .nav__item--pages a {

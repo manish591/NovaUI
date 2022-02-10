@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/javascript/theme.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/design-system.css">
-    <link rel="stylesheet" href="/css/sidebar.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/design-system.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Nova UI</title>
-</head>
-<body class="surface-one">
+  </head>
+  <body class="surface-one">
     <aside class="sidebar grid" id="sidenav-open">
       <section class="sidebar__content">
         <div class="sidebar__top flex">
@@ -23,81 +26,114 @@
         <div class="sidebar__bottom">
           <ul class="sidebar__list flex">
             <li class="sidebar__list-item"><a href="/index.html">Home</a></li>
-            <li class="sidebar__list-item"><a href="/pages/intro.html">Docs</a></li>
-            <li class="sidebar__list-item"><a href="https://github.com/manish591/NovaUI">Github</a></li>
+            <li class="sidebar__list-item">
+              <a href="/pages/intro.html">Docs</a>
+            </li>
+            <li class="sidebar__list-item">
+              <a href="https://github.com/manish591/NovaUI">Github</a>
+            </li>
             <li class="sidebar__list-item"><a href="#">About Me</a></li>
           </ul>
         </div>
       </section>
-      <a href="#" id="sidenav-close" class="sidebar__close" title="Close Menu"></a>
+      <a
+        href="#"
+        id="sidenav-close"
+        class="sidebar__close"
+        title="Close Menu"
+      ></a>
     </aside>
     <header class="surface-two shadow-one">
       <nav class="nav row">
         <ul class="nav__list row">
-          <li class="hamburger nav__hamburger"><a
-            href="#sidenav-open"
-            id="sidenav-button"
-            title="Open Menu"
-            aria-label="Open Menu"
-          >
-            <img
-              src="/assets/menu_black_24dp (1).svg"
-              alt=""
-              class="nav__item"
-            />
-          </a></li>
-          <li class="nav__item logo">Nova <span>UI</span></li>
+          <li class="hamburger nav__hamburger">
+            <a
+              href="#sidenav-open"
+              id="sidenav-button"
+              title="Open Menu"
+              aria-label="Open Menu"
+            >
+              <img
+                src="/assets/menu_black_24dp (1).svg"
+                alt=""
+                class="nav__item"
+              />
+            </a>
+          </li>
+          <li class="nav__item logo">
+            <a href="/index.html">Nova <span>UI</span></a>
+          </li>
         </ul>
         <ul class="nav__list hide nav__list--box">
-          <li class="nav__item nav__item--pages"><a href="/index.html"
-            >Home</a
-          ></li>
-          <li class="nav__item nav__item--pages"><a href="/pages/intro.html"
-            >Documentation</a
-          ></li>
-          <li class="nav__item nav__item--pages"><a
-            href="https://github.com/manish591/NovaUI"
-            >Github</a
-          ></li>
+          <li class="nav__item nav__item--pages">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="nav__item nav__item--pages">
+            <a href="/pages/intro.html">Documentation</a>
+          </li>
+          <li class="nav__item nav__item--pages">
+            <a href="https://github.com/manish591/NovaUI">Github</a>
+          </li>
           <li class="nav__item nav__item--pages"><a href="#">About</a></li>
         </ul>
         <ul class="nav__links row">
-          <li><a href="https://github.com/manish591"
-            ><img class="nav__img" src="/assets/github.png" alt=""
-          /></a></li>
-          <li><a class="hide" href="https://twitter.com/manishdevrani77"
-            ><img class="nav__img" src="/assets/twitter.png" alt=""
-          /></a></li>
-          <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
-            ><img class="nav__img" src="/assets/linkedin.png" alt=""
-          /></a></li>
-          <li><button
-            class="theme-toggle nav__img nav__theme nav__item"
-            id="theme-toggle"
-            data-label="auto"
-          ></button></li>
+          <li>
+            <a href="https://github.com/manish591"
+              ><img
+                class="nav__img"
+                src="/assets/github.png"
+                alt="github"
+                target="_blank"
+            /></a>
+          </li>
+          <li>
+            <a
+              class="hide"
+              href="https://twitter.com/manishdevrani77"
+              target="_blank"
+              ><img class="nav__img" src="/assets/twitter.png" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a
+              class="hide"
+              href="https://www.linkedin.com/in/manishdevrani77/"
+              target="_blank"
+              ><img class="nav__img" src="/assets/linkedin.png" alt="linkedin"
+            /></a>
+          </li>
+          <li>
+            <button
+              class="theme-toggle nav__img nav__theme nav__item"
+              id="theme-toggle"
+              data-label="auto"
+            ></button>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="intro row">
-        <section class="intro__hero">
-          <h1 class="intro__title font-size-900-large">
-            Design Responsive And Beautiful Websites With Nova
-          </h1>
-          <p class="intro__info">
-            Nova is a CSS framework, integrated with pre-defined styled classes,
-            and Utilites, for a quick creation of mobile-first websites, with much
-            focus on Functionality.
-          </p>
-          <div class="intro__links">
-            <a href="/pages/intro.html" class="intro__btn intro__btn--get-started"
-              >Get Started</a
-            >
-            <a href="https://github.com/manish591" class="intro__btn intro__btn--github"
-              >See Github</a
-            >
-          </div>
-        </section>
-     </main>
-</body>
+      <section class="intro__hero">
+        <h1 class="intro__title font-size-900-large">
+          Design Responsive And Beautiful Websites With Nova
+        </h1>
+        <p class="intro__info">
+          Nova is a CSS framework, integrated with pre-defined styled classes,
+          and Utilites, for a quick creation of mobile-first websites, with much
+          focus on Functionality.
+        </p>
+        <div class="intro__links">
+          <a href="/pages/intro.html" class="intro__btn intro__btn--get-started"
+            >Get Started</a
+          >
+          <a
+            href="https://github.com/manish591/NovaUI"
+            target="_blank"
+            class="intro__btn intro__btn--github"
+            >See Github</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

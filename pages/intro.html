@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/comp-page.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css" integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/javascript/script.js"></script>
 </head>
 <body class="surface-one">
   <aside class="sidebar grid" id="sidenav-open">
@@ -117,7 +117,7 @@
               class="nav__item"
             />
           </a></li>
-          <li class="nav__item logo">Nova <span>UI</span></li>
+          <li class="nav__item logo"><a href="/index.html">Nova <span>UI</span></a></li>
         </ul>
         <ul class="nav__list hide nav__list--box">
           <li class="nav__item nav__item--pages"><a href="/index.html"
@@ -133,13 +133,13 @@
           <li class="nav__item nav__item--pages"><a href="#">About</a></li>
         </ul>
         <ul class="nav__links row">
-          <li><a href="https://github.com/manish591"
+          <li><a href="https://github.com/manish591" target="_blank"
             ><img class="nav__img" src="/assets/github.png" alt=""
           /></a></li>
-          <li><a class="hide" href="https://twitter.com/manishdevrani77"
+          <li><a class="hide" href="https://twitter.com/manishdevrani77" target="_blank"
             ><img class="nav__img" src="/assets/twitter.png" alt=""
           /></a></li>
-          <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
+          <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/" target="_blank"
             ><img class="nav__img" src="/assets/linkedin.png" alt=""
           /></a></li>
           <li><button
@@ -152,17 +152,17 @@
     </header>
     <div class="component component--grid">
       <section class="sidenav flow-space">
-        <div class="sidenav__get-started">
+        <div class="sidenav__get-started sidenav__line-bottom">
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
-            <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
+            <li class="sidenav__items sidenav__items--selected"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
             <li class="sidenav__items"><a href="#">Learn</a></li>
             <li class="sidenav__items"><a href="#">Usage</a></li>
             <li class="sidenav__items"><a href="#">Example</a></li>
             <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
-        <div class="sidenav__components">
+        <div class="sidenav__components sidenav__line-bottom">
           <h3 class="sidenav__title">Components</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/components/avatar/avatar.html">Avatar</a></li>
@@ -223,11 +223,7 @@
                 <h3 class="feed__subtitle">Installation Guide</h3>
                 <p class="feed__text">In order to introduce Nova to your project, Copy the Link given below and paste it in the &lt;head&gt; tag of your html, above all other style sheets.</p>
                 <div class="feed__code">
-                  <pre>
-                    <code class="language-html">
-                      &lt;link rel="stylesheet" href="https://nova.netlify.app/css/components.css"&gt;
-                    </code>
-                  </pre>
+                  
                 </div>
             </div>
             <div class="space-bottom flow-space-2">
@@ -236,8 +232,5 @@
             </div>
         </section>
     </div>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
 </body>
 </html>

@@ -33,14 +33,21 @@
 
 .intro__btn {
     text-decoration: none;
-    padding: .8rem 1.5rem;
+    padding: .8rem 1.8rem;
     border-radius: 6px;
     color: var(--text1);
+    position: relative;
 }
 
 .intro__btn--get-started {
     background-color: var(--brand);
     color: var(--light-clr);
+    z-index: 1;
+    transition: background-color 250ms ease-in-out;
+}
+
+.intro__btn--get-started:hover {
+    background-color: var(--clr-primary);
 }
 
 .intro__btn--github {
@@ -57,5 +64,11 @@
 @media (max-width: 299px) {
     .intro__title {
         font-size: var(--fs-900-small);
+    }
+}
+
+@media (max-width: 600px) {
+    .intro__btn--github {
+        display: none;
     }
 }

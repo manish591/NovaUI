@@ -57,3 +57,13 @@
 .navigation__list--center {
     margin-inline: auto;
 }
+
+@media (max-width: 600px) {
+    .navigation__hide {
+        display: none;
+    }
+
+    .navigation--forms {
+        margin-left: auto;
+    }
+}

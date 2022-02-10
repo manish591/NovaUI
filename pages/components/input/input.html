@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/comp-page.css">
     <link rel="stylesheet" href="./input.css">
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+    />
 </head>
 <body class="surface-one">
   <aside class="sidebar grid" id="sidenav-open">
@@ -53,7 +57,7 @@
             href="/pages/components/image/image.html"
             >Images</a
           ></li>
-          <li class="sidebar__list-item"><a
+          <li class="sidebar__list-item links--selected"><a
             href="/pages/components/input/input.html"
             >Input</a
           ></li>
@@ -152,7 +156,7 @@
   </header>
     <div class="component component--grid">
       <section class="sidenav flow-space">
-        <div class="sidenav__get-started">
+        <div class="sidenav__get-started sidenav--line-bottom">
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
@@ -162,7 +166,7 @@
             <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
-        <div class="sidenav__components">
+        <div class="sidenav__components sidenav--line-bottom">
           <h3 class="sidenav__title">Components</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/components/avatar/avatar.html">Avatar</a></li>
@@ -181,7 +185,7 @@
             <li class="sidenav__items"><a href="/pages/components/image/image.html"
               >Image</a
             ></li>
-            <li class="sidenav__items"><a href="/pages/components/input/input.html"
+            <li class="sidenav__items links--selected"><a href="/pages/components/input/input.html"
               >Input</a
             ></li>
             <li class="sidenav__items"><a href="/pages/components/texts/text.html"
@@ -210,7 +214,7 @@
             ></li>
           </ul>
         </div>
-        <div class="sidenav__design-system">
+        <div class="sidenav__design-system sidenav--line-bottom">
           <h3 class="sidenav__title">Design System</h3>
         </div>
       </section>
@@ -222,7 +226,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Basic Input Field</h3>
             <p class="feed__text">
-              This is the basic input field you will see in Nova.
+              This is the basic input field you can create using Nova.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo">
@@ -230,6 +234,7 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
+                <span class="material-icons icons-small">expand_more</span>
               </div>
               <div class="feed__code">
                 
@@ -239,7 +244,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Input Field With Placeholder</h3>
             <p class="feed__text">
-              Placeholder describes what type of data this input field is expecting from the user.
+              Placeholder describes what type of data this input field is expecting from the user. For creating this add a <span class="text-mark">Placeholder Attribute</span> in your input tag.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo">
@@ -247,6 +252,7 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
+                <span class="material-icons icons-small">expand_more</span>
               </div>
               <div class="feed__code">
                 
@@ -256,7 +262,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Input Field With Labels</h3>
             <p class="feed__text">
-              Placeholder describes what type of data this input field is expecting from the user.
+              Label inputs are good for giving user info about the input field.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo">
@@ -267,6 +273,7 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
+                <span class="material-icons icons-small">expand_more</span>
               </div>
               <div class="feed__code">
                 
@@ -276,7 +283,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Input Field Varients</h3>
             <p class="feed__text">
-              Nova provides you with three basic input Varients, outlined, filled and standard. 
+              Nova provides you with three basic input Varients, outlined, filled and standard. Use a <span class="text-mark">.form__group</span> along with varient name like <span class="text-mark">.form__floating</span>.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--flex">
@@ -295,6 +302,7 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
+                <span class="material-icons icons-small">expand_more</span>
               </div>
               <div class="feed__code">
                 
@@ -304,7 +312,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Input Form Types and Attributes</h3>
             <p class="feed__text">
-              There are multiple attributes and forms types you can use.
+              There are multiple attributes and forms types you can use. Set the respective type attribute.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo gutter-temp">
@@ -321,6 +329,7 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
+                <span class="material-icons icons-small">expand_more</span>
               </div>
               <div class="feed__code">
                 
@@ -347,6 +356,7 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
+                <span class="material-icons icons-small">expand_more</span>
               </div>
               <div class="feed__code">
                 

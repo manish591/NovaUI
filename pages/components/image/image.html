@@ -18,7 +18,6 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="surface-one">
   <aside class="sidebar grid" id="sidenav-open">
@@ -54,7 +53,7 @@
             href="/pages/components/card/card.html"
             >Card</a
           ></li>
-          <li class="sidebar__list-item"><a
+          <li class="sidebar__list-item links--selected"><a
             href="/pages/components/image/image.html"
             >Images</a
           ></li>
@@ -157,7 +156,7 @@
   </header>
     <div class="component component--grid">
       <section class="sidenav flow-space">
-        <div class="sidenav__get-started">
+        <div class="sidenav__get-started sidenav--line-bottom">
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
@@ -167,7 +166,7 @@
             <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
-        <div class="sidenav__components">
+        <div class="sidenav__components sidenav--line-bottom">
           <h3 class="sidenav__title">Components</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/components/avatar/avatar.html">Avatar</a></li>
@@ -183,7 +182,7 @@
             <li class="sidenav__items"><a href="/pages/components/card/card.html"
               >Card</a
             ></li>
-            <li class="sidenav__items"><a href="/pages/components/image/image.html"
+            <li class="sidenav__items links--selected"><a href="/pages/components/image/image.html"
               >Image</a
             ></li>
             <li class="sidenav__items"><a href="/pages/components/input/input.html"
@@ -215,7 +214,7 @@
             ></li>
           </ul>
         </div>
-        <div class="sidenav__design-system">
+        <div class="sidenav__design-system sidenav--line-bottom">
           <h3 class="sidenav__title">Design System</h3>
         </div>
       </section>
@@ -229,7 +228,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Square Images</h3>
             <p class="feed__text">
-              They are of Square shaped with dimensions equal to 200 x 200.
+              They are of Square shaped with dimensions equal to 150 x 150.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--flex">
@@ -238,6 +237,7 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
+                <span class="material-icons icons-small">expand_more</span>
               </div>
               <div class="feed__code">
                 
@@ -248,7 +248,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Round Images</h3>
             <p class="feed__text">
-              These are cicular images with a dimension of 200 x 200.
+              These are cicular images with a dimension of 150 x 150.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo feed__demo--flex">
@@ -257,6 +257,7 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
+                <span class="material-icons icons-small">expand_more</span>
               </div>
               <div class="feed__code">
                 
@@ -267,7 +268,7 @@
           <div class="flow-space-2 space-bottom">
             <h3 class="feed__subtitle">Responsive Images</h3>
             <p class="feed__text">
-              These images will be as big as their parent container to give them responsive nature. As their parent grows and shrink they will also grow and shrink.
+              These images will be as big as their parent container to give them responsive nature. As their parent grows and shrink they will also grow and shrink. Resize the browser to see output.
             </p>
             <div class="feed__component-display">
               <section class="feed__demo">
@@ -277,6 +278,7 @@
               </section>
               <div class="feed__source-display">
                 <button class="feed__code-source">Source</button>
+                <span class="material-icons icons-small">expand_more</span>
               </div>
               <div class="feed__code">
                 
@@ -285,8 +287,5 @@
           </div>
         </section>
     </div>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
 </body>
 </html>

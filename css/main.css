@@ -1,0 +1,23 @@
+/* design system */
+
+@import url("/css/design-system.css");
+
+/* Components */
+
+@import url("/pages/components/alert/alert.css");
+@import url("/pages/components/avatar/avatar.css");
+@import url("/pages/components/badge/badge.css");
+@import url("/pages/components/button/button.css");
+@import url("/pages/components/card/card.css");
+@import url("/pages/components/grid/grid.css");
+@import url("/pages/components/image/image.css");
+@import url("/pages/components/input/input.css");
+@import url("/pages/components/lists/list.css");
+@import url("/pages/components/modal/modal.css");
+@import url("/pages/components/navigation/navigation.css");
+@import url("/pages/components/ratings/ratings.css");
+@import url("/pages/components/slider/slider.css");
+@import url("/pages/components/texts/text.css");
+@import url("/pages/components/toast/toast.css");
+
+/* utilities */

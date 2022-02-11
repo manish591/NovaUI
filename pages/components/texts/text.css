@@ -1,0 +1,40 @@
+.fw-100 {
+    font-weight: 100;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.small-text {
+    font-size: var(--fs-100);
+    font-weight: 600;
+}
+
+.grey-text {
+    color: grey;
+}
+
+.text-underline {
+    text-decoration: underline;
+    text-decoration-color: var(--brand);
+}
+
+.text-mark {
+    background-color: var(--surface4);
+    padding-inline: .2rem;
+    padding-block: .1rem;
+    border-radius: 4px;
+}
+
+.text-strike-through {
+    text-decoration: line-through;
+}

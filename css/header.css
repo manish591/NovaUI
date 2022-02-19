@@ -16,10 +16,6 @@ header {
     color: var(--text2);
 }
 
-.logo span {
-    color: var(--brand);
-}
-
 .nav {
     padding-block: 3vh;
     padding-inline: 0;
@@ -42,10 +38,15 @@ header {
 
 .nav__img {
     block-size: 1.5rem;
+    aspect-ratio: 1;
 }
 
 .nav__hamburger {
     width: 30px;
+}
+
+.nav__item--menu {
+    aspect-ratio: 1;
 }
 
 .hide {

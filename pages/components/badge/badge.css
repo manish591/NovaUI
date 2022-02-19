@@ -11,11 +11,12 @@
     position: absolute;
     border-radius: 50%;
     color: var(--light-clr);
-    font-size: var(--fs-100);
+    font-size: calc(var(--fs-100) + .1rem);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1;
+    font-weight: bold;
 }
 
 .badge__info--standard {
@@ -39,11 +40,11 @@
     background: var(--brand);
     color: var(--light-clr);
     border-radius: 3px;
-    opacity: .6;
+    opacity: 1;
 }
 
 .badge__btn:hover {
-    opacity: 1;
+    opacity: .9;
 }
 
 .badge__info--btn-right {
@@ -51,6 +52,7 @@
     top: -5px;
     right: -10px;
     width: 20px;
+    color: var(--dark-clr);
 }
 
 .badge__info--btn-left {

@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nova-Documentation</title>
+    <meta name="description" content="Avatars are used to represent a person or object to give them a
+    visual identity. It gives user and objects a digital identity.">
+    <meta name="author" content="Manish devrani">
+    <title>Nova:Avatar</title>
     <script src="/javascript/theme.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,11 +34,7 @@
         <div class="sidebar__bottom">
           <ul class="flex sidebar__list">
             <li><p class="sidebar__list-category">Get Started</p></li>
-            <li class="sidebar__list-item"><a href="#">Installation</a></li>
-            <li><a href="#" class="sidebar__list-item">Learn</a></li>
-            <li><a href="#" class="sidebar__list-item">Usage</a></li>
-            <li><a href="#" class="sidebar__list-item">Examples</a></li>
-            <li><a href="#" class="sidebar__list-item">Conclusion</a></li>
+            <li class="sidebar__list-item"><a href="/pages/intro.html">Installation</a></li>
           </ul>
           <ul class="flex sidebar__list">
             <li><p class="sidebar__list-category">Components</p></li>
@@ -118,13 +117,9 @@
             title="Open Menu"
             aria-label="Open Menu"
           >
-            <img
-              src="/assets/menu_black_24dp (1).svg"
-              alt=""
-              class="nav__item"
-            />
+          <span class="nav__item nav__item--menu material-icons">menu</span>
           </a></li>
-          <li class="nav__item logo">Nova <span>UI</span></li>
+          <li class="nav__item logo">Nova UI</li>
         </ul>
         <ul class="nav__list hide nav__list--box">
           <li class="nav__item nav__item--pages"><a href="/index.html"
@@ -135,24 +130,26 @@
           ></li>
           <li class="nav__item nav__item--pages"><a
             href="https://github.com/manish591/NovaUI"
+            target="_blank"
             >Github</a
           ></li>
           <li class="nav__item nav__item--pages"><a href="#">About</a></li>
         </ul>
         <ul class="nav__links row">
           <li><a href="https://github.com/manish591" target="_blank"
-            ><img class="nav__img" src="/assets/github.png" alt=""
+            ><img class="nav__img" src="/assets/github.png" alt="github"
           /></a></li>
           <li><a class="hide" href="https://twitter.com/manishdevrani77" target="_blank"
-            ><img class="nav__img" src="/assets/twitter.png" alt=""
+            ><img class="nav__img" src="/assets/twitter.png" alt="twitter"
           /></a></li>
           <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/" target="_blank"
-            ><img class="nav__img" src="/assets/linkedin.png" alt=""
+            ><img class="nav__img" src="/assets/linkedin.png" alt="linkedin"
           /></a></li>
           <li><button
             class="theme-toggle nav__img nav__theme nav__item"
             id="theme-toggle"
             data-label="auto"
+            aria-label="theme-toggle"
           ></button></li>
         </ul>
       </nav>
@@ -163,10 +160,6 @@
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
-            <li class="sidenav__items"><a href="#">Learn</a></li>
-            <li class="sidenav__items"><a href="#">Usage</a></li>
-            <li class="sidenav__items"><a href="#">Example</a></li>
-            <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
         <div class="sidenav__components">
@@ -230,7 +223,7 @@
           </p>
         </div>
         <div class="flow-space-2 space-bottom">
-          <h3 class="feed__subtitle">Images Avatar</h3>
+          <h2 class="feed__subtitle">Images Avatar</h2>
           <p class="feed__text">
             Images avator can be created using class <span class="text-mark">.avatar</span> on img. Also, add alt for images.
           </p>
@@ -238,7 +231,7 @@
             <section class="feed__demo">
               <img
                 src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-                alt=""
+                alt="minion"
                 class="avatar"
               />
             </section>
@@ -252,7 +245,7 @@
           </div>
         </div>
         <div class="space-bottom flow-space-2">
-          <h3 class="feed__subtitle">Initials Avatar</h3>
+          <h2 class="feed__subtitle">Initials Avatar</h2>
           <p class="feed__text">
             When you don't have an image to use then, you can also add your
             initials using a class called <span class="text-mark">.avatar--initial</span>.
@@ -276,7 +269,7 @@
           </div>
         </div>
         <div class="space-bottom flow-space-2">
-          <h3 class="feed__subtitle">Sizes Avatar</h3>
+          <h2 class="feed__subtitle">Sizes Avatar</h2>
           <p class="feed__text">
             Avatars can be sized using classes <span class="text-mark">.avatar--small</span>, <span class="text-mark">.avatar--medium</span> and <span class="text-mark">.avatar--large</span>. Along with <span class="text-mark">.avatar</span> class use these classes to get desired shape.
           </p>
@@ -284,27 +277,23 @@
             <section class="feed__demo feed__demo--flex">
               <img
                 src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-                alt=""
+                alt="minion-avatar"
                 class="avatar avatar--small"
               />
               <img
                 src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-                alt=""
+                alt="minion-avatar"
                 class="avatar avatar--medium"
               />
               <img
                 src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-                alt=""
+                alt="minion-avatar"
                 class="avatar avatar--large"
               />
             </section>
             <div class="feed__source-display">
               <button class="feed__code-source">Source</button>
-              <img
-                src="/images/keyboard_arrow_down_black_18dp.svg"
-                alt=""
-                class="feed__source-icon"
-              />
+              <span class="material-icons icons-small">expand_more</span>
             </div>
             <div class="feed__code">
               <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmanish591%2Flearning_git%2Fblob%2Fmaster%2Findex.html%23L24-L38&style=night-owl&showCopy=on"></script>
@@ -312,7 +301,7 @@
           </div>
         </div>
         <div class="space-bottom flow-space-2">
-          <h3 class="feed__subtitle">Shapes Avatar</h3>
+          <h2 class="feed__subtitle">Shapes Avatar</h2>
           <p class="feed__text">
             Give your avatars custom shapes using classes <span class="text-mark">.avatar--square</span>, <span class="text-mark">.avatar--rounded</span>and <span class="text-mark">.avatar--circle</span>.
           </p>
@@ -320,27 +309,23 @@
             <section class="feed__demo feed__demo--flex">
               <img
                 src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-                alt=""
+                alt="minion-avatar"
                 class="avatar avatar--square"
               />
               <img
                 src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-                alt=""
+                alt="minion-avatar"
                 class="avatar avatar--rounded"
               />
               <img
                 src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-                alt=""
+                alt="minion-avatar"
                 class="avatar avatar--circle"
               />
             </section>
             <div class="feed__source-display">
               <button class="feed__code-source">Source</button>
-              <img
-                src="/images/keyboard_arrow_down_black_18dp.svg"
-                alt=""
-                class="feed__source-icon"
-              />
+              <span class="material-icons icons-small">expand_more</span>
             </div>
             <div class="feed__code">
               <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fmanish591%2Flearning_git%2Fblob%2Fmaster%2Findex.html%23L41-L57&style=night-owl&showCopy=on"></script>

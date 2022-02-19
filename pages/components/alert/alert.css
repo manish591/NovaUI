@@ -9,6 +9,7 @@
 
 .alert--primary {
     background-color: var(--clr-primary);
+    color: var(--light-clr);
 }
 
 .alert--secondary {
@@ -21,10 +22,12 @@
 
 .alert--success {
     background-color: var(--clr-success);
+    color: var(--dark-clr);
 }
 
 .alert--warning {
     background-color: var(--clr-warning);
+    color: var(--dark-clr);
 }
 
 .alert__fancy {
@@ -81,13 +84,13 @@
 }
 
 .alert__icon--success {
-    color: var(--clr-success);
+    color: var(--dark-success);
 }
 
 .alert__icon--danger {
-    color: var(--clr-danger);
+    color: var(--dark-danger);
 }
 
 .alert__icon--warning {
-    color: var(--clr-warning);
+    color: var(--dark-warning);
 }

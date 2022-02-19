@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nova-Documentation</title>
+    <meta name="description" content="Badges are used to draw user attention on change. That can be a
+    change in status and count. It can be positioned at bottom-right, top-right etc.">
+    <meta name="author" content="Manish devrani">
+    <title>Nova:Badge</title>
     <script src="/javascript/theme.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,11 +35,7 @@
         <div class="sidebar__bottom">
           <ul class="flex sidebar__list">
             <li><p class="sidebar__list-category">Get Started</p></li>
-            <li class="sidebar__list-item"><a href="#">Installation</a></li>
-            <li><a href="#" class="sidebar__list-item">Learn</a></li>
-            <li><a href="#" class="sidebar__list-item">Usage</a></li>
-            <li><a href="#" class="sidebar__list-item">Examples</a></li>
-            <li><a href="#" class="sidebar__list-item">Conclusion</a></li>
+            <li class="sidebar__list-item"><a href="/pages/intro.html">Installation</a></li>
           </ul>
           <ul class="flex sidebar__list">
             <li><p class="sidebar__list-category">Components</p></li>
@@ -119,13 +118,9 @@
             title="Open Menu"
             aria-label="Open Menu"
           >
-            <img
-              src="/assets/menu_black_24dp (1).svg"
-              alt=""
-              class="nav__item"
-            />
+          <span class="nav__item nav__item--menu material-icons">menu</span>
           </a></li>
-          <li class="nav__item logo">Nova <span>UI</span></li>
+          <li class="nav__item logo">Nova UI</li>
         </ul>
         <ul class="nav__list hide nav__list--box">
           <li class="nav__item nav__item--pages"><a href="/index.html"
@@ -136,24 +131,26 @@
           ></li>
           <li class="nav__item nav__item--pages"><a
             href="https://github.com/manish591/NovaUI"
+            target="_blank"
             >Github</a
           ></li>
           <li class="nav__item nav__item--pages"><a href="#">About</a></li>
         </ul>
         <ul class="nav__links row">
-          <li><a href="https://github.com/manish591"
-            ><img class="nav__img" src="/assets/github.png" alt=""
+          <li><a href="https://github.com/manish591" target="_blank"
+            ><img class="nav__img" src="/assets/github.png" alt="github"
           /></a></li>
-          <li><a class="hide" href="https://twitter.com/manishdevrani77"
-            ><img class="nav__img" src="/assets/twitter.png" alt=""
+          <li><a class="hide" href="https://twitter.com/manishdevrani77" target="_blank"
+            ><img class="nav__img" src="/assets/twitter.png" alt="twitter"
           /></a></li>
-          <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
-            ><img class="nav__img" src="/assets/linkedin.png" alt=""
+          <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/" target="_blank"
+            ><img class="nav__img" src="/assets/linkedin.png" alt="linkedin"
           /></a></li>
           <li><button
             class="theme-toggle nav__img nav__theme nav__item"
             id="theme-toggle"
             data-label="auto"
+            aria-label="theme-toggle"
           ></button></li>
         </ul>
       </nav>
@@ -164,10 +161,6 @@
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
-            <li class="sidenav__items"><a href="#">Learn</a></li>
-            <li class="sidenav__items"><a href="#">Usage</a></li>
-            <li class="sidenav__items"><a href="#">Example</a></li>
-            <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
         <div class="sidenav__components sidenav--line-bottom">
@@ -231,7 +224,7 @@
           </p>
         </div>
         <div class="flow-space space-bottom">
-          <h3 class="feed__subtitle">Icon Badges</h3>
+          <h2 class="feed__subtitle">Icon Badges</h2>
           <p class="feed__text">
             Icon badges are very common. Use classes <span class="text-mark">.badge</span> to create such badges. Use varients classes <span class="text-mark">.badge--primary</span> on badge <span class="text-mark">p tag</span> to give them diffrent colors.
           </p>
@@ -256,7 +249,7 @@
           </div>
         </div>
         <div class="flow-space space-bottom">
-          <h3 class="feed__subtitle">Button Badges</h3>
+          <h2 class="feed__subtitle">Button Badges</h2>
           <p class="feed__text">
             Button badges can be created by enclosing button in our badge container. Then use our utility classes for badges shown below.
           </p>
@@ -281,7 +274,7 @@
           </div>
         </div>
         <div class="flow-space space-bottom">
-          <h3 class="feed__subtitle">Badges with texts</h3>
+          <h2 class="feed__subtitle">Badges with texts</h2>
           <p class="feed__text">
             Text badges are used by enclosing a text inside our badge container. Then use utility class <span class="text-mark">.badge__info--text-right</span> to position it accordingly.
           </p>
@@ -306,7 +299,7 @@
           </div>
         </div>
         <div class="flow-space space-bottom">
-          <h3 class="feed__subtitle">Profile Badges</h3>
+          <h2 class="feed__subtitle">Profile Badges</h2>
           <p class="feed__text">
             Profile badges are very common. They used to represent user current status. For online status use class <span class="text-mark">.badge__info--online</span>, for offline status use class <span class="text-mark">.badge__info--offline</span> etc.
           </p>
@@ -315,7 +308,7 @@
               <div class="badge">
                 <img
                 src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-                alt=""
+                alt="minion-badge"
                 class="avatar"
                />
                <p class="badge__info badge__info--profile badge__info--online"></p>
@@ -323,7 +316,7 @@
               <div class="badge">
                 <img
                 src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-                alt=""
+                alt="minion-badge"
                 class="avatar"
                />
                <p class="badge__info badge__info--profile badge__info--offline"></p>
@@ -331,7 +324,7 @@
               <div class="badge">
                 <img
                 src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-                alt=""
+                alt="minion-badge"
                 class="avatar"
                />
                <p class="badge__info badge__info--profile badge__info--dnd"></p>

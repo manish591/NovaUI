@@ -52,12 +52,16 @@
      /* components colors */
 
      --light-clr: #fff;
-     --clr-primary: #0E7EB9;
+     --clr-primary: #0c5982;
      --clr-secondary: #4B4B53;
      --clr-danger: #C92323;
      --clr-success: #1F994C;
      --clr-warning: #C66D05;
      --clr-text: #fff;
+     --dark-clr: black;
+     --dark-success: #2c6741;
+     --dark-warning: #81531e;
+     --dark-danger: #a51414;
 
     /* spacing properties */
   

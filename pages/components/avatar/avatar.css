@@ -24,10 +24,6 @@
     justify-content: center;
 }
 
-.avatar--initial > p {
-    opacity: .8;
-}
-
 .avatar--square {
     border-radius: 0;
 }

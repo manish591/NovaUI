@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova-Documentation</title>
+    <meta name="description" content="Buttons are everywhere on the web. They represent actions that user can take. Use Nova's custom button styles to use them in forms, modal, etc.">
+    <meta name="author" content="Manish devrani">
+    <title>Nova:Button</title>
     <script src="/javascript/theme.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +30,7 @@
       <div class="sidebar__bottom">
         <ul class="flex sidebar__list">
           <li><p class="sidebar__list-category">Get Started</p></li>
-          <li class="sidebar__list-item"><a href="#">Installation</a></li>
-          <li><a href="#" class="sidebar__list-item">Learn</a></li>
-          <li><a href="#" class="sidebar__list-item">Usage</a></li>
-          <li><a href="#" class="sidebar__list-item">Examples</a></li>
-          <li><a href="#" class="sidebar__list-item">Conclusion</a></li>
+          <li class="sidebar__list-item"><a href="/pages/intro.html">Installation</a></li>
         </ul>
         <ul class="flex sidebar__list">
           <li><p class="sidebar__list-category">Components</p></li>
@@ -115,13 +113,9 @@
           title="Open Menu"
           aria-label="Open Menu"
         >
-          <img
-            src="/assets/menu_black_24dp (1).svg"
-            alt=""
-            class="nav__item"
-          />
+        <span class="nav__item nav__item--menu material-icons">menu</span>
         </a></li>
-        <li class="nav__item logo">Nova <span>UI</span></li>
+        <li class="nav__item logo">Nova UI</li>
       </ul>
       <ul class="nav__list hide nav__list--box">
         <li class="nav__item nav__item--pages"><a href="/index.html"
@@ -132,24 +126,26 @@
         ></li>
         <li class="nav__item nav__item--pages"><a
           href="https://github.com/manish591/NovaUI"
+          target="_blank"
           >Github</a
         ></li>
         <li class="nav__item nav__item--pages"><a href="#">About</a></li>
       </ul>
       <ul class="nav__links row">
-        <li><a href="https://github.com/manish591"
-          ><img class="nav__img" src="/assets/github.png" alt=""
+        <li><a href="https://github.com/manish591" target="_blank"
+          ><img class="nav__img" src="/assets/github.png" alt="github"
         /></a></li>
-        <li><a class="hide" href="https://twitter.com/manishdevrani77"
-          ><img class="nav__img" src="/assets/twitter.png" alt=""
+        <li><a class="hide" href="https://twitter.com/manishdevrani77" target="_blank"
+          ><img class="nav__img" src="/assets/twitter.png" alt="twitter"
         /></a></li>
-        <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
-          ><img class="nav__img" src="/assets/linkedin.png" alt=""
+        <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/" target="_blank"
+          ><img class="nav__img" src="/assets/linkedin.png" alt="linkedin"
         /></a></li>
         <li><button
           class="theme-toggle nav__img nav__theme nav__item"
           id="theme-toggle"
           data-label="auto"
+          aria-label="theme-toggle"
         ></button></li>
       </ul>
     </nav>
@@ -160,10 +156,6 @@
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
-            <li class="sidenav__items"><a href="#">Learn</a></li>
-            <li class="sidenav__items"><a href="#">Usage</a></li>
-            <li class="sidenav__items"><a href="#">Example</a></li>
-            <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
         <div class="sidenav__components sidenav--line-bottom">
@@ -224,7 +216,7 @@
             <p class="feed__text">Buttons are everywhere on the web. They represent actions that user can take. Use Nova's custom button styles to use them in forms, modal, etc.</p>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Contained Buttons</h3>
+            <h2 class="feed__subtitle">Contained Buttons</h2>
             <p class="feed__text">
               They are filled buttons and mostly useful for primary action in your web page. Use our predefined classes <span class="text-mark">.btn</span> along with varients classes like <span class="text-mark">.btn--contained-primary</span> to create such buttons.
             </p>
@@ -256,7 +248,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Outlined Buttons</h3>
+            <h2 class="feed__subtitle">Outlined Buttons</h2>
             <p class="feed__text">
               In case you don't need primary action button everywhere then, you can use outlined button for a secondary action in your web page. Replace varient class <span class="text-mark">.btn--contained-primary</span> with class <span class="text-mark">.btn--outlined-primary</span> for creating outlined buttons.
             </p>
@@ -288,7 +280,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Text Buttons</h3>
+            <h2 class="feed__subtitle">Text Buttons</h2>
             <p class="feed__text">
               Text buttons can be created using varient class <span class="text-mark">.btn--text</span>
             </p>
@@ -311,7 +303,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Link Buttons</h3>
+            <h2 class="feed__subtitle">Link Buttons</h2>
             <p class="feed__text">
               Link can lead you to a diffrent page while button denotes action. You can style a link as a button using our predefined classes.
             </p>
@@ -337,7 +329,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Icon Buttons</h3>
+            <h2 class="feed__subtitle">Icon Buttons</h2>
             <p class="feed__text">
               Create these cool looking icon btn using class <span class="text-mark">.btn--icon</span>.
             </p>
@@ -369,7 +361,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Floating Action Buttons</h3>
+            <h2 class="feed__subtitle">Floating Action Buttons</h2>
             <p class="feed__text">
               Floating action buttons are diffrent than usual buttons. They are used for primary action user can take. Use our varient class <span class="text-mark">.btn--floating</span> to create such buttons.
             </p>

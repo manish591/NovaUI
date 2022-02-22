@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova-Documentation</title>
+    <meta name="description" content="Ratings allow us to see user experience with the product and service available on their plateform. We can also give our opinions using ratings.">
+    <meta name="author" content="Manish devrani">
+    <title>Nova:Ratings</title>
     <script src="/javascript/theme.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +30,7 @@
       <div class="sidebar__bottom">
         <ul class="flex sidebar__list">
           <li><p class="sidebar__list-category">Get Started</p></li>
-          <li class="sidebar__list-item"><a href="#">Installation</a></li>
-          <li><a href="#" class="sidebar__list-item">Learn</a></li>
-          <li><a href="#" class="sidebar__list-item">Usage</a></li>
-          <li><a href="#" class="sidebar__list-item">Examples</a></li>
-          <li><a href="#" class="sidebar__list-item">Conclusion</a></li>
+          <li class="sidebar__list-item"><a href="/pages/intro.html">Installation</a></li>
         </ul>
         <ul class="flex sidebar__list">
           <li><p class="sidebar__list-category">Components</p></li>
@@ -115,13 +113,9 @@
           title="Open Menu"
           aria-label="Open Menu"
         >
-          <img
-            src="/assets/menu_black_24dp (1).svg"
-            alt=""
-            class="nav__item"
-          />
+        <span class="nav__item nav__item--menu material-icons">menu</span>
         </a></li>
-        <li class="nav__item logo">Nova <span>UI</span></li>
+        <li class="nav__item logo">Nova UI</li>
       </ul>
       <ul class="nav__list hide nav__list--box">
         <li class="nav__item nav__item--pages"><a href="/index.html"
@@ -132,24 +126,26 @@
         ></li>
         <li class="nav__item nav__item--pages"><a
           href="https://github.com/manish591/NovaUI"
+          target="_blank"
           >Github</a
         ></li>
         <li class="nav__item nav__item--pages"><a href="#">About</a></li>
       </ul>
       <ul class="nav__links row">
-        <li><a href="https://github.com/manish591"
-          ><img class="nav__img" src="/assets/github.png" alt=""
+        <li><a href="https://github.com/manish591" target="_blank"
+          ><img class="nav__img" src="/assets/github.png" alt="github"
         /></a></li>
-        <li><a class="hide" href="https://twitter.com/manishdevrani77"
-          ><img class="nav__img" src="/assets/twitter.png" alt=""
+        <li><a class="hide" href="https://twitter.com/manishdevrani77" target="_blank"
+          ><img class="nav__img" src="/assets/twitter.png" alt="twitter"
         /></a></li>
-        <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
-          ><img class="nav__img" src="/assets/linkedin.png" alt=""
+        <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/" target="_blank"
+          ><img class="nav__img" src="/assets/linkedin.png" alt="linkedin"
         /></a></li>
         <li><button
           class="theme-toggle nav__img nav__theme nav__item"
           id="theme-toggle"
           data-label="auto"
+          aria-label="theme-toggle"
         ></button></li>
       </ul>
     </nav>
@@ -160,10 +156,6 @@
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
-            <li class="sidenav__items"><a href="#">Learn</a></li>
-            <li class="sidenav__items"><a href="#">Usage</a></li>
-            <li class="sidenav__items"><a href="#">Example</a></li>
-            <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
         <div class="sidenav__components sidenav--line-bottom">
@@ -221,10 +213,10 @@
         <section class="feed">
           <div class="space-bottom flow-space-2">
             <h1 class="feed__title">Ratings</h1>
-            <p class="feed__text">Ratings allow us to see user experience with the product and service available on their plateform. We can also give our opinions using rartings.</p>
+            <p class="feed__text">Ratings allow us to see user experience with the product and service available on their plateform. We can also give our opinions using ratings.</p>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Basic Rating</h3>
+            <h2 class="feed__subtitle">Basic Rating</h2>
             <p class="feed__text">
               This is the basic rating.
             </p>
@@ -258,7 +250,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Dynamic Rating</h3>
+            <h2 class="feed__subtitle">Dynamic Rating</h2>
             <p class="feed__text">
               If you want more fancy looking ratings then you can use them.
             </p>

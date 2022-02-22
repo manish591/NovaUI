@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova-Documentation</title>
+    <meta name="description" content="Modal are draws over everything on the web to give user quick message. You can close then using clear button. They uses position fixed.">
+    <meta name="author" content="Manish devrani">
+    <title>Nova:Modal</title>
     <script src="/javascript/theme.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +27,7 @@
       <div class="sidebar__bottom">
         <ul class="flex sidebar__list">
           <li><p class="sidebar__list-category">Get Started</p></li>
-          <li class="sidebar__list-item"><a href="#">Installation</a></li>
-          <li><a href="#" class="sidebar__list-item">Learn</a></li>
-          <li><a href="#" class="sidebar__list-item">Usage</a></li>
-          <li><a href="#" class="sidebar__list-item">Examples</a></li>
-          <li><a href="#" class="sidebar__list-item">Conclusion</a></li>
+          <li class="sidebar__list-item"><a href="/pages/intro.html">Installation</a></li>
         </ul>
         <ul class="flex sidebar__list">
           <li><p class="sidebar__list-category">Components</p></li>
@@ -112,13 +110,9 @@
           title="Open Menu"
           aria-label="Open Menu"
         >
-          <img
-            src="/assets/menu_black_24dp (1).svg"
-            alt=""
-            class="nav__item"
-          />
+        <span class="nav__item nav__item--menu material-icons">menu</span>
         </a></li>
-        <li class="nav__item logo">Nova <span>UI</span></li>
+        <li class="nav__item logo">Nova UI</li>
       </ul>
       <ul class="nav__list hide nav__list--box">
         <li class="nav__item nav__item--pages"><a href="/index.html"
@@ -129,24 +123,26 @@
         ></li>
         <li class="nav__item nav__item--pages"><a
           href="https://github.com/manish591/NovaUI"
+          target="_blank"
           >Github</a
         ></li>
         <li class="nav__item nav__item--pages"><a href="#">About</a></li>
       </ul>
       <ul class="nav__links row">
-        <li><a href="https://github.com/manish591"
-          ><img class="nav__img" src="/assets/github.png" alt=""
+        <li><a href="https://github.com/manish591" target="_blank"
+          ><img class="nav__img" src="/assets/github.png" alt="github"
         /></a></li>
-        <li><a class="hide" href="https://twitter.com/manishdevrani77"
-          ><img class="nav__img" src="/assets/twitter.png" alt=""
+        <li><a class="hide" href="https://twitter.com/manishdevrani77" target="_blank"
+          ><img class="nav__img" src="/assets/twitter.png" alt="twitter"
         /></a></li>
-        <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
-          ><img class="nav__img" src="/assets/linkedin.png" alt=""
+        <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/" target="_blank"
+          ><img class="nav__img" src="/assets/linkedin.png" alt="linkedin"
         /></a></li>
         <li><button
           class="theme-toggle nav__img nav__theme nav__item"
           id="theme-toggle"
           data-label="auto"
+          aria-label="theme-toggle"
         ></button></li>
       </ul>
     </nav>
@@ -157,10 +153,6 @@
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
-            <li class="sidenav__items"><a href="#">Learn</a></li>
-            <li class="sidenav__items"><a href="#">Usage</a></li>
-            <li class="sidenav__items"><a href="#">Example</a></li>
-            <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
         <div class="sidenav__components sidenav--line-bottom">
@@ -221,7 +213,7 @@
             <p class="feed__text">Modal are draws over everything on the web to give user quick message. You can close then using clear button. They uses position <span class="text-mark">fixed</span></p>.
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Example For Modal</h3>
+            <h2 class="feed__subtitle">Example For Modal</h2>
             <p class="feed__text">
               To show modal example we have removed position properties from this component.
             </p>
@@ -251,7 +243,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Live Demo</h3>
+            <h2 class="feed__subtitle">Live Demo</h2>
             <p class="feed__text">
               You can see here how modal will look on a real website by clicking on live demo button. Use varient class <span class="text-mark">.dialog--alert</span> to create basic modal component. These components require javascript, so include javascript for them to work.
             </p>
@@ -283,7 +275,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Simple Modal</h3>
+            <h2 class="feed__subtitle">Simple Modal</h2>
             <p class="feed__text">
               This modal describes a list. Create this by replacing the class <span class="text-mark">.dialog--alert</span> with class <span class="text-mark">.dialog--simple</span>.
             </p>
@@ -324,7 +316,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Confirmation Modal</h3>
+            <h2 class="feed__subtitle">Confirmation Modal</h2>
             <p class="feed__text">
               This is the other modal varient that can be created using class <span class="text-mark">.dialog--confirmation</span>.
             </p>

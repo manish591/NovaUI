@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova-Documentation</title>
+    <meta name="description" content="Cards represent a surface that displays content of a single topic. You can use Nova's predefined classes to create responsive and diffrent varients cards.">
+    <meta name="author" content="Manish devrani">
+    <title>Nova:Card</title>
     <script src="/javascript/theme.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +30,7 @@
       <div class="sidebar__bottom">
         <ul class="flex sidebar__list">
           <li><p class="sidebar__list-category">Get Started</p></li>
-          <li class="sidebar__list-item"><a href="#">Installation</a></li>
-          <li><a href="#" class="sidebar__list-item">Learn</a></li>
-          <li><a href="#" class="sidebar__list-item">Usage</a></li>
-          <li><a href="#" class="sidebar__list-item">Examples</a></li>
-          <li><a href="#" class="sidebar__list-item">Conclusion</a></li>
+          <li class="sidebar__list-item"><a href="/pages/intro.html">Installation</a></li>
         </ul>
         <ul class="flex sidebar__list">
           <li><p class="sidebar__list-category">Components</p></li>
@@ -115,13 +113,9 @@
           title="Open Menu"
           aria-label="Open Menu"
         >
-          <img
-            src="/assets/menu_black_24dp (1).svg"
-            alt=""
-            class="nav__item"
-          />
+        <span class="nav__item nav__item--menu material-icons">menu</span>
         </a></li>
-        <li class="nav__item logo">Nova <span>UI</span></li>
+        <li class="nav__item logo">Nova UI</li>
       </ul>
       <ul class="nav__list hide nav__list--box">
         <li class="nav__item nav__item--pages"><a href="/index.html"
@@ -132,24 +126,26 @@
         ></li>
         <li class="nav__item nav__item--pages"><a
           href="https://github.com/manish591/NovaUI"
+          target="_blank"
           >Github</a
         ></li>
         <li class="nav__item nav__item--pages"><a href="#">About</a></li>
       </ul>
       <ul class="nav__links row">
-        <li><a href="https://github.com/manish591"
-          ><img class="nav__img" src="/assets/github.png" alt=""
+        <li><a href="https://github.com/manish591" target="_blank"
+          ><img class="nav__img" src="/assets/github.png" alt="github"
         /></a></li>
-        <li><a class="hide" href="https://twitter.com/manishdevrani77"
-          ><img class="nav__img" src="/assets/twitter.png" alt=""
+        <li><a class="hide" href="https://twitter.com/manishdevrani77" target="_blank"
+          ><img class="nav__img" src="/assets/twitter.png" alt="twitter"
         /></a></li>
-        <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/"
-          ><img class="nav__img" src="/assets/linkedin.png" alt=""
+        <li><a class="hide" href="https://www.linkedin.com/in/manishdevrani77/" target="_blank"
+          ><img class="nav__img" src="/assets/linkedin.png" alt="linkedin"
         /></a></li>
         <li><button
           class="theme-toggle nav__img nav__theme nav__item"
           id="theme-toggle"
           data-label="auto"
+          aria-label="theme-toggle"
         ></button></li>
       </ul>
     </nav>
@@ -160,10 +156,6 @@
           <h3 class="sidenav__title">Getting Started</h3>
           <ul class="sidenav__list">
             <li class="sidenav__items"><a href="/pages/intro.html" class="sidenav__items-link">Installation</a></li>
-            <li class="sidenav__items"><a href="#">Learn</a></li>
-            <li class="sidenav__items"><a href="#">Usage</a></li>
-            <li class="sidenav__items"><a href="#">Example</a></li>
-            <li class="sidenav__items"><a href="#">Conclusion</a></li>
           </ul>
         </div>
         <div class="sidenav__components sidenav--line-bottom">
@@ -224,7 +216,7 @@
             <p class="feed__text">Cards represent a surface that displays content of a single topic. You can use Nova's predefined classes to create responsive and diffrent varients cards.</p>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Basic Card</h3>
+            <h2 class="feed__subtitle">Basic Card</h2>
             <p class="feed__text">
               This card contains basic info, like image, little description, and cta.
             </p>
@@ -239,7 +231,7 @@
                     />
                   </div>
                   <div class="card__content">
-                    <h3 class="card__title">Our Changing Planet</h3>
+                    <h2 class="card__title">Our Changing Planet</h2>
                     <p class="card__author">by Manish Devrani</p>
                     <p class="card__info">
                       Visit ten places on our planet that are undergoing the biggest
@@ -269,7 +261,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Card With Badges</h3>
+            <h2 class="feed__subtitle">Card With Badges</h2>
             <p class="feed__text">
               This type of card attract user attention by showing them some important points like discount details, any offer, any deadline.
             </p>
@@ -287,7 +279,7 @@
                     </div>
                   </div>
                   <div class="card__content">
-                    <h3 class="card__title">Our Changing Planet</h3>
+                    <h2 class="card__title">Our Changing Planet</h2>
                     <p class="card__author">by Manish Devrani</p>
                     <p class="card__info">
                       Visit ten places on our planet that are undergoing the biggest
@@ -317,7 +309,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Card With Dismiss</h3>
+            <h2 class="feed__subtitle">Card With Dismiss</h2>
             <p class="feed__text">Dismissable cards can be removed from the view. Require you to implement javascript.</p>
             <div class="feed__component-display">
               <section class="feed__demo">
@@ -333,7 +325,7 @@
                     </div>
                   </div>
                   <div class="card__content">
-                    <h3 class="card__title">Our Changing Planet</h3>
+                    <h2 class="card__title">Our Changing Planet</h2>
                     <p class="card__author">by Manish Devrani</p>
                     <p class="card__info">
                       Visit ten places on our planet that are undergoing the biggest
@@ -363,7 +355,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Card With Text Overlay</h3>
+            <h2 class="feed__subtitle">Card With Text Overlay</h2>
             <p class="feed__text">
               Text information will be displayed over image.
             </p>
@@ -377,7 +369,7 @@
                       class="card__image"
                     />
                     <div class="card__content-above">
-                      <h3 class="card__title">Our Changing Planet</h3>
+                      <h2 class="card__title">Our Changing Planet</h2>
                       <p class="card__author">by Manish Devrani</p>
                     </div>
                   </div>
@@ -407,7 +399,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Text Only Card</h3>
+            <h2 class="feed__subtitle">Text Only Card</h2>
             <p class="feed__text">
               This is basic card without images.
             </p>
@@ -415,7 +407,7 @@
               <section class="feed__demo">
                 <section class="card card--basic">
                   <div class="card__content">
-                    <h3 class="card__title">Our Changing Planet</h3>
+                    <h2 class="card__title">Our Changing Planet</h2>
                     <p class="card__author">by Manish Devrani</p>
                     <p class="card__info">
                       Visit ten places on our planet that are undergoing the biggest
@@ -445,7 +437,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Horizontal/Vertical Card</h3>
+            <h2 class="feed__subtitle">Horizontal/Vertical Card</h2>
             <p class="feed__text">
               This is a horizontal varients of previous cards.
             </p>
@@ -460,7 +452,7 @@
                     />
                   </div>
                   <div class="card__content">
-                    <h3 class="card__title">Our Changing Planet</h3>
+                    <h2 class="card__title">Our Changing Planet</h2>
                     <p class="card__author">by Manish Devrani</p>
                     <p class="card__info">
                       Visit ten places on our planet that are undergoing the biggest
@@ -490,7 +482,7 @@
             </div>
           </div>
           <div class="flow-space-2 space-bottom">
-            <h3 class="feed__subtitle">Cards With Shadow</h3>
+            <h2 class="feed__subtitle">Cards With Shadow</h2>
             <p class="feed__text">
               Here we have added box shadow to give them more user friendly look.
             </p>
@@ -505,7 +497,7 @@
                     />
                   </div>
                   <div class="card__content">
-                    <h3 class="card__title">Our Changing Planet</h3>
+                    <h2 class="card__title">Our Changing Planet</h2>
                     <p class="card__author">by Manish Devrani</p>
                     <p class="card__info">
                       Visit ten places on our planet that are undergoing the biggest

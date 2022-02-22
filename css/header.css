@@ -139,7 +139,8 @@ header {
     }
 
     .nav__img {
-        block-size: 15px;
+        block-size: 1.5rem;
+        inline-size: 1.5rem;
     }
 }
 

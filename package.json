@@ -1,0 +1,28 @@
+{
+  "name": "novaui",
+  "version": "1.0.0",
+  "description": "###### Now, Quickly build **mobile first responsive** websites using NOVA UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postcss:watch": "postcss css/main.css --dir public --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manish591/NovaUI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manish591/NovaUI/issues"
+  },
+  "homepage": "https://github.com/manish591/NovaUI#readme",
+  "devDependencies": {
+    "cssnano": "^5.1.7",
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "postcss-preset-env": "^7.4.4"
+  }
+}

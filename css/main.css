@@ -1,23 +1,23 @@
 /* design system */
 
-@import url("/css/design-system.css");
+@import 'design-system.css';
 
 /* Components */
 
-@import url("/pages/components/alert/alert.css");
-@import url("/pages/components/avatar/avatar.css");
-@import url("/pages/components/badge/badge.css");
-@import url("/pages/components/button/button.css");
-@import url("/pages/components/card/card.css");
-@import url("/pages/components/grid/grid.css");
-@import url("/pages/components/image/image.css");
-@import url("/pages/components/input/input.css");
-@import url("/pages/components/lists/list.css");
-@import url("/pages/components/modal/modal.css");
-@import url("/pages/components/navigation/navigation.css");
-@import url("/pages/components/ratings/ratings.css");
-@import url("/pages/components/slider/slider.css");
-@import url("/pages/components/texts/text.css");
-@import url("/pages/components/toast/toast.css");
+@import '../pages/components/alert/alert.css';
+@import '../pages/components/avatar/avatar.css';
+@import '../pages/components/badge/badge.css';
+@import '../pages/components/button/button.css';
+@import '../pages/components/card/card.css';
+@import '../pages/components/grid/grid.css';
+@import '../pages/components/image/image.css';
+@import '../pages/components/input/input.css';
+@import '../pages/components/lists/list.css';
+@import '../pages/components/modal/modal.css';
+@import '../pages/components/navigation/navigation.css';
+@import '../pages/components/ratings/ratings.css';
+@import '../pages/components/slider/slider.css';
+@import '../pages/components/texts/text.css';
+@import '../pages/components/toast/toast.css';
 
 /* utilities */

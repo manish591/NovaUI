@@ -1,96 +1,97 @@
 .form__input {
-    background: none;
-    border: 1px solid grey;
-    inline-size: 100%;
-    padding-block: .7rem;
-    padding-inline: .8rem;
-    border-radius: 4px;
-    outline: none;
+  background: none;
+  border: 1px solid grey;
+  inline-size: 100%;
+  padding-block: 0.7rem;
+  padding-inline: 0.8rem;
+  border-radius: 4px;
+  outline: none;
+  color: var(--text1);
 }
 
 .form__input:focus {
-    border: 2px solid var(--clr-primary);
+  border: 2px solid var(--clr-primary);
 }
 
 .form__group {
-    flex-direction: column;
-    gap: var(--spacing-5);
-    position: relative;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  position: relative;
 }
 
 :where(.form__group--floating) .form__label {
-    position: absolute;
-    inset-block-start: 12px;
-    inset-inline-start: 16px;
-    transition: 250ms;
-    pointer-events: none;
+  position: absolute;
+  inset-block-start: 12px;
+  inset-inline-start: 16px;
+  transition: 250ms;
+  pointer-events: none;
 }
 
 :where(.form__group--floating) .form__label--standard {
-    inset-inline-start: 0;
-    transition: 250ms;
+  inset-inline-start: 0;
+  transition: 250ms;
 }
 
 .form__input--filled {
-    border: none;
-    background: var(--surface4);
+  border: none;
+  background: var(--surface4);
 }
 
 .form__input--standard {
-    border: none;
-    border-block-end: 1px solid grey;
-    border-radius: 0;
-    padding-inline: 0;
-    padding-block: .4rem;
+  border: none;
+  border-block-end: 1px solid grey;
+  border-radius: 0;
+  padding-inline: 0;
+  padding-block: 0.4rem;
 }
 
 .form__input--standard:focus {
-    border: none;
-    border-block-end: 2px solid var(--clr-primary);
+  border: none;
+  border-block-end: 2px solid var(--clr-primary);
 }
 
 .form__input--outlined:focus ~ label,
 .form__input--outlined:valid ~ label {
-    font-size: 12px;
-    inset-block-start: -8px;
-    inset-inline-start: 16px;
-    background-color: var(--surface1);
-    padding-inline: 4px;
+  font-size: 12px;
+  inset-block-start: -8px;
+  inset-inline-start: 16px;
+  background-color: var(--surface1);
+  padding-inline: 4px;
 }
 
 .form__input--standard:focus ~ label,
 .form__input--standard:valid ~ label {
-    font-size: 12px;
-    inset-block-start: -15px;
-    inset-inline-start: 0;
+  font-size: 12px;
+  inset-block-start: -15px;
+  inset-inline-start: 0;
 }
 
 .form__input--filled:focus ~ label,
 .form__input--filled:valid ~ label {
-    font-size: 10px;
-    inset-block-start: 0px;
-    inset-inline-start: 14px;
+  font-size: 10px;
+  inset-block-start: 0px;
+  inset-inline-start: 14px;
 }
 
 .gutter-temp {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: var(--spacing-12);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--spacing-12);
 }
 
 .form__helper-text {
-    padding-block-start: .2rem;
-    font-size: var(--fs-200);
+  padding-block-start: 0.2rem;
+  font-size: var(--fs-200);
 }
 
 .has-error {
-    color: var(--clr-danger);
+  color: var(--clr-danger);
 }
 
 :where(.has-error) .form__input {
-    border-color: var(--clr-danger);
+  border-color: var(--clr-danger);
 }
 
 :where(.has-error) .form__input:focus {
-    border: 2px solid var(--clr-danger);
+  border: 2px solid var(--clr-danger);
 }

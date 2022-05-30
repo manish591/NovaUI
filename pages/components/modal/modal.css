@@ -1,188 +1,198 @@
 .wrapper {
-    inline-size: 85%;
-    margin-block: 0;
-    margin-inline: auto;
+  inline-size: 85%;
+  margin-block: 0;
+  margin-inline: auto;
 }
 
 .wrapper-2 {
-    inline-size: 90%;
-    margin-block: 0;
-    margin-inline: auto;
+  inline-size: 90%;
+  margin-block: 0;
+  margin-inline: auto;
 }
 
 .md-size {
-    font-size: 40px !important;
-    color: grey !important;
+  font-size: 40px !important;
+  color: grey !important;
 }
 
 .dialog--hide {
-    display: none;
+  display: none;
 }
 
-.dialog {
-    position: fixed;
-    inset-block-start: 30%;
-    inset-inline-start: 50%;
-    transform: translateX(-50%);
-    inline-size: 250px;
-    block-size: max-content;
-    background-color: var(--surface2);
-    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.256);
-    z-index: 12;
+.dialog-data {
+  position: fixed;
+  inset-block-start: 30%;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  inline-size: 250px;
+  block-size: max-content;
+  background-color: var(--surface2);
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.256);
+  z-index: 12;
+}
+
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(81, 77, 77, 0.615);
+  z-index: 10;
 }
 
 .dialog__content {
-    position: relative;
-    padding-block: 1rem;
-    padding-inline: 0;
+  position: relative;
+  padding-block: 1rem;
+  padding-inline: 0;
 }
 
 .dialog__clear {
-    position: absolute;
-    inset-block-start: 5px;
-    inset-inline-end: 5px;
-    opacity: .5;
-    font-size: 18px !important;
-    cursor: pointer;
+  position: absolute;
+  inset-block-start: 5px;
+  inset-inline-end: 5px;
+  opacity: 0.5;
+  font-size: 18px !important;
+  cursor: pointer;
 }
 
 .dialog__clear:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .dialog--demo {
-    position: static;
-    margin: 0;
-    transform: translate(0);
+  position: static;
+  margin: 0;
+  transform: translate(0);
 }
 
 .dialog--demo .dialog__clear {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .dialog__info {
-    margin-block-end: 1.7rem;
+  margin-block-end: 1.7rem;
 }
 
 .dialog__header {
-    margin-block-end: .7rem;
-    font-size: 1.5rem;
+  margin-block-end: 0.7rem;
+  font-size: 1.5rem;
 }
 
 .dialog__description {
-    font-size: 1rem;
-    opacity: .8;
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 .dialog__cta {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
 }
 
 .dialog__action-btn {
-    border: none;
-    background: none;
-    font-size: .9rem;
-    color: var(--brand);
-    padding-inline: .4rem;
-    padding-block: .6rem;
-    border-radius: 5px;
-    text-transform: uppercase;
-    transition: .5s;
-    font-weight: bold;
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  color: var(--brand);
+  padding-inline: 0.4rem;
+  padding-block: 0.6rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .dialog__action-btn:hover {
-    --light-clr: #5d768c27;
-    background-color: var(--light-clr);
+  --light-clr: #5d768c27;
+  background-color: var(--light-clr);
 }
 
 .dialog__item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    inline-size: 100%;
-    padding-block: .5rem;
-    padding-inline: .3rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  inline-size: 100%;
+  padding-block: 0.5rem;
+  padding-inline: 0.3rem;
 }
 
 .dialog__item:hover {
-    --light-clr: #5d768c27;
-    background-color: var(--light-clr);
-    border-radius: 5px;
+  --light-clr: #5d768c27;
+  background-color: var(--light-clr);
+  border-radius: 5px;
 }
 
 .dialog__header--confirm {
-    padding-block: .6rem;
-    padding-inline: 1rem;
+  padding-block: 0.6rem;
+  padding-inline: 1rem;
 }
 
 .dialog__cta--confirm {
-    padding-block: 0;
-    padding-inline: 1rem;
+  padding-block: 0;
+  padding-inline: 1rem;
 }
 
 .dialog__info--confirm {
-    --light-clr: #5d768c2f;
-    border-block-end: 1px solid var(--light-clr);
-    margin: 0;
+  --light-clr: #5d768c2f;
+  border-block-end: 1px solid var(--light-clr);
+  margin: 0;
 }
 
 .dialog__cta--confirm {
-    --light-clr: #5d768c2f;
-    border-block-start: 1px solid var(--light-clr);
+  --light-clr: #5d768c2f;
+  border-block-start: 1px solid var(--light-clr);
 }
 
 .dialog__action-btn--gap-top {
-    margin-block-start: 10px;
+  margin-block-start: 10px;
 }
 
 .dialog__form {
-    padding-block: .5rem;
-    padding-inline: 1rem;
-    block-size: 120px;
-    overflow-y: scroll;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  block-size: 120px;
+  overflow-y: scroll;
 }
 
-.dialog__input-area--flex { 
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.dialog__input-area--flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .dialog__input-area {
-    margin-block-end: 1rem;
+  margin-block-end: 1rem;
 }
 
 .dialog__input-area label {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .show-modal {
-    block-size: 48px;
-    padding-inline: 30px;
-    border: none;
-    background-color: var(--brand);
-    color: var(--light-clr);
-    border-radius: 6px;
+  block-size: 48px;
+  padding-inline: 30px;
+  border: none;
+  background-color: var(--brand);
+  color: var(--light-clr);
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .scale-dialog {
-    animation: fade 350ms ease-in-out;
+  animation: fade 350ms ease-in-out;
 }
 
 @keyframes fade {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 299px) {
-    .dialog {
-        width: 90%;
-    }
+  .dialog {
+    width: 90%;
+  }
 }

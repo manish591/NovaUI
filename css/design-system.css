@@ -3,9 +3,9 @@
 /* --------------------- */
 
 * {
-  --brand-color: hsl(200, 100%, 50%);
+  --brand-color: hsl(200, 100%, 60%);
 
-  --brand-hue: 200;
+  --brand-hue: 220;
   --brand-saturation: 100%;
   --brand-lightness: 50%;
 
@@ -57,7 +57,7 @@
   /* components colors */
 
   --light-clr: #fff;
-  --clr-primary: #0c5982;
+  --clr-primary: #0c5882;
   --clr-secondary: #4b4b53;
   --clr-danger: #c92323;
   --clr-success: #1f994c;
@@ -90,7 +90,7 @@
 
   /* Font sizes */
 
-  --fs-900-large: 3.8rem;
+  --fs-900-large: 3.9rem;
   --fs-900-small: 2.8rem;
   --fs-800: 2rem;
   --fs-700: 1.75rem;

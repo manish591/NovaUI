@@ -1,4 +1,4 @@
-# Nova UI
+# Nova UI: a component library
 
 ###### Now, Quickly build **mobile first responsive** websites using NOVA ui
 

@@ -26,6 +26,7 @@ To use NOVA Ui components in your projects paste this `<link>` element in your `
 * Ratings
 * Text Utilities 
 * Toast
+* Progress Bar
 
 
 ## Detailed guide about components 

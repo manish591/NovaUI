@@ -27,6 +27,7 @@ To use NOVA Ui components in your projects paste this `<link>` element in your `
 * Text Utilities 
 * Toast
 * Progress Bar
+* Date picker
 
 
 ## Detailed guide about components 

@@ -1,6 +1,6 @@
 # Nova UI
 
-###### Now, Quickly build **mobile first responsive** websites using NOVA UI. 
+###### Now, Quickly build **mobile first responsive** websites using NOVA ui
 
 
 ## Quick Start

@@ -1,11 +1,11 @@
 # Nova UI: a component library
 
-###### Now, Quickly build **mobile first responsive** websites using NOVA ui
+###### Now, Quickly build **mobile first responsive** websites using NOVA UI. It provides HTML, CSS components.
 
 
 ## Quick Start
 
-To use NOVA Ui components in your projects paste this `<link>` element in your `<head>` before all other stylesheets. 
+To use NOVA Ui components in your projects, paste this `<link>` element in your `<head>` before all other stylesheets. 
 
     <link rel="stylesheet" href="https://uinova.netlify.app/css/main.css">;
 

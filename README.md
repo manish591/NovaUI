@@ -1,6 +1,6 @@
 # Nova UI: a component library
 
-###### Now, Quickly build **mobile first responsive** websites using NOVA UI. It provides HTML, CSS components. hdh
+###### Now, Quickly build **mobile first responsive** websites using NOVA UI. It provides HTML, CSS components. hdh hdhdhd
 
 
 ## Quick Start

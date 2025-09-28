@@ -31,6 +31,7 @@ To use NOVA Ui components in your projects, paste this `<link>` element in your 
 * Time picker
 * Badge
 * Calender
+* Date and time
 
 
 ## Detailed guide about components 

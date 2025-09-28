@@ -34,6 +34,7 @@ To use NOVA Ui components in your projects, paste this `<link>` element in your 
 * Date and time
 * Animated text
 * Shimmer effect
+* Animated gradient background
 
 
 ## Detailed guide about components 

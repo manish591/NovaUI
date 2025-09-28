@@ -32,7 +32,8 @@ To use NOVA Ui components in your projects, paste this `<link>` element in your 
 * Badge
 * Calender
 * Date and time
-* Animated text 
+* Animated text
+* Shimmer effect
 
 
 ## Detailed guide about components 

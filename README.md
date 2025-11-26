@@ -36,6 +36,7 @@ To use NOVA Ui components in your projects, paste this `<link>` element in your 
 * Shimmer effect
 * Animated gradient background
 * Background Animate Button
+* Infinite carousel
 
 
 ## Detailed guide about components 

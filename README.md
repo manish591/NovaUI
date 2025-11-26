@@ -37,6 +37,7 @@ To use NOVA Ui components in your projects, paste this `<link>` element in your 
 * Animated gradient background
 * Background Animate Button
 * Infinite carousel
+* fancy button
 
 
 ## Detailed guide about components 
